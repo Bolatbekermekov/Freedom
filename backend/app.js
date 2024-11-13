@@ -8,6 +8,7 @@ import { fileURLToPath } from 'url'
 import { swaggerDocs } from './src/config/swagger.config.js'
 import { errorMiddleware } from './src/middlewares/error.js'
 import { adminAnalyticsRouter } from './src/routes/admin/admin-analytics.route.js'
+import { adminResumeRouter } from './src/routes/admin/admin-candidate.route.js'
 import { adminCategoriesRouter } from './src/routes/admin/admin-categories.route.js'
 import { adminOrderRouter } from './src/routes/admin/admin-orders.route.js'
 import { adminProductRouter } from './src/routes/admin/admin-products.route.js'
@@ -98,6 +99,7 @@ app.use('/api/v2/admin/categories', adminCategoriesRouter)
 app.use('/api/v2/admin/sub-categories', adminSubCategoriesRouter)
 app.use('/api/v2/admin/analytics', adminAnalyticsRouter)
 app.use('/api/v2/admin/promotions', adminPromotionRouter)
+app.use('/api/v2/admin/resume', adminResumeRouter)
 
 // Superadmin Routes
 app.use('/api/v2/superadmin/analytics', superAdminAnalyticsRouter)

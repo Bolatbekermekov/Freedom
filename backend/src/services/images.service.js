@@ -9,6 +9,7 @@ const __filename = fileURLToPath(import.meta.url)
 const __dirname = dirname(__filename)
 
 const uploadPath = path.join(__dirname, '../../public/images/products')
+const uploadWay = path.join(__dirname, '../../public/resumes')
 
 class ImagesService {
 	saveProductImage(storeId, productCode, file) {
@@ -58,4 +59,43 @@ class ImagesService {
 	}
 }
 
+
+class ResumesService {
+	saveResumeFile(candidateId, file) {
+		// Используем candidateId и оригинальное имя файла для сохранения
+		const filename = `${candidateId}-${file.originalname}`
+
+		// Путь для хранения резюме
+		const folderPath = path.join(uploadWay)
+
+		try {
+			if (!fs.existsSync(folderPath)) {
+				fs.mkdirSync(folderPath, { recursive: true })
+			}
+
+			const filePath = path.join(folderPath, filename)
+			fs.writeFileSync(filePath, file.buffer)
+
+			// Возвращаем путь, по которому будет доступно резюме
+			return `resumes/${filename}`
+		} catch (err) {
+			logger.error('Error saving resume file', err)
+			throw err
+		}
+	}
+
+	deleteResumeFile(resumePath) {
+		try {
+			const absolutePath = path.join(uploadWay, resumePath)
+			if (fs.existsSync(absolutePath)) {
+				fs.unlinkSync(absolutePath)
+			}
+		} catch (err) {
+			logger.error('Error deleting resume file', err)
+			throw err
+		}
+	}
+}
+
+export const resumesService = new ResumesService()
 export const imagesService = new ImagesService()
