@@ -1,0 +1,71 @@
+name: Frontend CI/CD Pipeline
+
+on:
+  push:
+    branches:
+      - main
+      - development
+  pull_request:
+    branches:
+      - main
+      - development
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v2
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v2
+        with:
+          node-version: '20.x'
+
+      - name: Cache dependencies
+        uses: actions/cache@v2
+        with:
+          path: ~/.npm
+          key: ${{ runner.os }}-npm-${{ hashFiles('**/package-lock.json') }}
+          restore-keys: |
+            ${{ runner.os }}-npm-
+
+      - name: Install Dependencies
+        run: npm install
+
+      - name: Run Unit Tests
+        run: npm run test
+
+      - name: Format code with Prettier
+        run: npm run format
+
+      - name: Lint with ESLint
+        run: npm run lint
+
+      - name: Build Application
+        run: npm run build
+
+      # - name: Login to DockerHub
+      #   uses: docker/login-action@v1
+      #   with:
+      #     username: diarcode
+      #     password: dckr_pat_btEs9q6Ms-UT9qgG8sQrZr8Y4RQ
+
+      # - name: Build and push Docker image
+      #   run: |
+      #     docker build -t diarcode/denxt-web:latest .
+      #     docker push diarcode/denxt-web:latest
+
+      # - name: Deploy to VPS
+      #   uses: appleboy/ssh-action@master
+      #   with:
+      #     host: 10.100.101.13
+      #     username: administrator
+      #     password: Pro100@@!!_dev
+      #     script: |
+      #       cd /var/www/test
+      #       docker stop dentx-web
+      #       docker rm dentx-web
+      #       docker pull diarcode/denxt-web:latest
+      #       docker compose up -d

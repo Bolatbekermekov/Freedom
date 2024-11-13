@@ -1,0 +1,21 @@
+<html lang="en">
+  <%- include("./partials/head.ejs") %>
+
+  <body>
+    <%- include("./partials/nav.ejs") %>
+
+    <div class="contact content">
+      <form action="/api/v1/user/submitmessage" method="POST">
+        <label for="title">Ваше Имя:</label>
+        <input type="text" id="name" name="name" required />
+        <label for="snippet">Ваши Контакты:</label>
+        <input type="text" id="contact" name="contact" required />
+        <label for="body">Cообщение:</label>
+        <textarea id="message" name="message" required></textarea>
+        <button>Отправить</button>
+      </form>
+    </div>
+
+    <%- include("./partials/footer.ejs") %>
+  </body>
+</html>

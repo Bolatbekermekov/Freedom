@@ -1,0 +1,966 @@
+{
+	"FILTERS": {
+		"LABEL": "Фильтр",
+		"VIEW": "Көрсету",
+		"SORT": "Сұрыптау",
+		"STATUS": "Мәртебесі",
+		"RESET": "Қалпына келтіру",
+		"APPLY": "Қолдану",
+		"DATE_PICKER": "Күнді таңдаңыз"
+	},
+	"HOME": {
+		"TITLE": "Қош келдіңіздер!",
+		"SUB_TITLE": "DentX басқару бетіне кіріңіз"
+	},
+	"DASHBOARD": {
+		"PAGE": "Аналитика",
+		"TOTALS": {
+			"SALES": "Сатылымдар",
+			"PRODUCTS": "Тауарлар",
+			"ORDERS": "Тапсырыстар",
+			"ACTIVE_ORDERS": "Жұмыс істейтін тапсырыстар",
+			"COMPLETED_ORDERS": "Аяқталған тапсырыстар",
+			"MEMBERS": "Компания мүшелері"
+		},
+		"SALES_BY_PERIOD": {
+			"LABEL": "Сатылымдар",
+			"SUBTITLE": "Период бойынша сатылымдар жолы",
+			"PERIODS": {
+				"PLACEHOLDER": "Периодты таңдаңыз",
+				"ONE_DAY": "1 күн",
+				"FIVE_DAYS": "5 күн",
+				"ONE_MONTH": "1 ай",
+				"SIX_MONTHS": "6 ай",
+				"MAX": "Макс"
+			}
+		},
+		"STATUSES_BY_MONTH": {
+			"LABEL": "Тапсырыс статустары",
+			"SUBTITLE": "Статус бойынша тапсырыстардың барлығы"
+		},
+		"ASSIGNEES_BY_ORDERS": {
+			"LABEL": "Тағайындалған тапсырыстар",
+			"SUBTITLE": "Белгіленген мүшелер бойынша тапсырыстардың саны"
+		},
+		"SUPERADMIN": {
+			"LABEL": "Суперадмин аналитикасы",
+			"TOTALS": {
+				"USERS": "Пайдаланушылар",
+				"CLINICS": "Клиниктер",
+				"STORES": "Сатушылар"
+			}
+		},
+		"PERIODS": {
+			"LABEL": "Кезеңдер",
+			"DAILY": "Күнделікті",
+			"WEEKLY": "Апта сайын",
+			"MONTHLY": "Ай сайын",
+			"QUARTERLY": "Тоқсан сайын",
+			"YEARLY": "Жыл сайын"
+		}
+	},
+	"ORDERS": {
+		"PAGE": "Тапсырыстар",
+		"TITLE": "Тапсырыстарды Басқару",
+		"EXPORT": "Экспорт",
+		"CREATE": "Жаңа",
+		"FILTER": {
+			"TERM": "Іздеу",
+			"SORT": {
+				"DATE_ASC": "Күні бойынша ↗",
+				"DATE_DESC": "Күні бойынша ↘"
+			},
+			"STATUSES": {
+				"ALL": "Барлығы",
+				"ACTIVE": "Белсенді",
+				"CREATED": "Жасалған",
+				"REVIEW_REJECTED_BY_USER": "Төлем шоты қабылданбады",
+				"UPDATED_BY_ADMIN": "Тапсырысты дүкен менеджері жаңартты",
+				"CANCELLED": "Жойылды",
+				"PREPARING": "Дайындалуда",
+				"SHIPPED": "Жөнелтілді",
+				"DELIVERED": "Жеткізілді",
+				"NEXT_DAY_SHIPPING": "Келесі күнгі жеткізу"
+			},
+			"VIEW": {
+				"TABLE": "Кесте",
+				"LIST": "Тізім"
+			}
+		},
+		"TABLE": {
+			"PRODUCTS": "Тауарлар",
+			"DATE": "Құрылған күні",
+			"QUANTITY": "Саны",
+			"TOTAL": "Сома",
+			"STATUS": "Күйі",
+			"ASSIGNEE": "Жауапты"
+		},
+		"DIALOGS": {
+			"CREATE": {
+				"HEADER": "Жаңа тапсырыс жасау",
+				"PRODUCTS": {
+					"LABEL": "Тауарлар",
+					"TABLE": {
+						"NAME": "Аты",
+						"QUANTITY": "Саны",
+						"PRICE": "Баға",
+						"TOTAL": "Жалпы Бағасы"
+					},
+					"SELECT_PRODUCT": "Тауарды таңдаңыз"
+				},
+				"SHIPPING": {
+					"LABEL": "Жеткізу",
+					"PAYMENT": {
+						"LABEL": "Төлем",
+						"PLACEHOLDER": "Төлем әдісін таңдаңыз",
+						"COD": "Жеткізу кезінде",
+						"ONLINE": "Онлайн"
+					},
+					"CUSTOMER_NAME": {
+						"LABEL": "Клиенттің аты",
+						"PLACEHOLDER": "Клиенттің атын eнгізіңіз"
+					},
+					"CUSTOMER_PHONE": {
+						"LABEL": "Клиенттің телефон нөмірі",
+						"PLACEHOLDER": "Клиенттің телефонын eнгізіңіз"
+					},
+					"SHIPPING_CHARGES": {
+						"LABEL": "Жеткізу түрі",
+						"PLACEHOLDER": "Жеткізу түрін таңдаңыз",
+						"FREE": "Тегін жеткізу",
+						"PAID": "Курьер арқылы төлем"
+					},
+					"ADDRESS": {
+						"LABEL": "Мекен-жай",
+						"PLACEHOLDER": "Толық жеткізу мекенжайын енгізіңіз"
+					},
+					"COUNTRY": {
+						"LABEL": "Ел",
+						"PLACEHOLDER": "Жеткізу елінің атын енгізіңіз"
+					},
+					"CITY": {
+						"LABEL": "Қала",
+						"PLACEHOLDER": "Жеткізу қаласының атын енгізіңіз"
+					}
+				},
+				"CREATE_BUTTON": "Тапсырыс жасау"
+			},
+			"ASSIGN": {
+				"HEADER": "Қызметкерді тапсырыс бойынша тағайындау",
+				"USER": {
+					"LABEL": "Компания қызметкері",
+					"PLACEHOLDER": "Компания қызметкерін таңдаңыз"
+				},
+				"ASSIGN_BUTTON": "Тағайындау"
+			},
+			"UPDATE": {
+				"HEADER": "Тапсырысты жаңарту",
+				"UPDATE_BUTTON": "Жаңарту"
+			}
+		}
+	},
+
+	"PROMOTIONS": {
+		"PAGE": "Промоакциялар",
+		"TITLE": "Промоакцияларды басқару",
+		"EXPORT": "Экспорт",
+		"CREATE": "Құру",
+		"FILTER": {
+			"TERM": "Іздеу",
+			"SORT": {
+				"DATE_ASC": "Құру күні бойынша ↗",
+				"DATE_DESC": "Құру күні бойынша ↘"
+			},
+			"VIEW": {
+				"TABLE": "Кесте",
+				"LIST": "Тізім"
+			},
+
+			"PROMOTIONS": {
+				"ALL": "Барлығы",
+				"AUTOMATIC": "Жеткізу жеңілдігі",
+				"CODE": "Промокод жеңілдігі"
+			}
+		},
+		"TABLE": {
+			"DESCRIPTION": "Сипаттама",
+			"DISCOUNT_PERCENTAGE": "Жеңілдік пайызы",
+			"DISCOUNT": "Жеңілдік",
+			"START_DATE": "Басталу күні",
+			"END_DATE": "Аяқталу күні",
+			"PROMO_CODE": "Промокод",
+			"PROMOTION_TYPE": "Промоакция түрі",
+			"MAX_USAGE": "Максималды пайдалану",
+			"MINIMUM_ORDER_VALUE": "Тапсырыстың ең төменгі құны",
+			"STATUS": "Мәртебе",
+			"APPLICABLE_CITIES": "Қолданылатын қалалар"
+		},
+		"STATUS": {
+			"ACTIVE": "Белсенді",
+			"INACTIVE": "Белсенді емес"
+		},
+		"PROMOTION_TYPE_LABELS": {
+			"CODE": "Промокод жеңілдігі",
+			"AUTOMATIC": "Жеткізу жеңілдігі"
+		},
+		"DIALOGS": {
+			"CREATE": {
+				"HEADER": "Промоакция құру",
+				"DESCRIPTION": {
+					"LABEL": "Сипаттама",
+					"PLACEHOLDER": "Сипаттаманы енгізіңіз"
+				},
+				"DISCOUNT_PERCENTAGE": {
+					"LABEL": "Жеңілдік пайызы",
+					"PLACEHOLDER": "Жеңілдік пайызын енгізіңіз"
+				},
+				"START_DATE": {
+					"LABEL": "Басталу күні"
+				},
+				"END_DATE": {
+					"LABEL": "Аяқталу күні"
+				},
+				"MAX_USAGE": {
+					"LABEL": "Максималды пайдалану",
+					"PLACEHOLDER": "Максималды пайдалану санын енгізіңіз"
+				},
+				"PROMO_CODE": {
+					"LABEL": "Промокод",
+					"PLACEHOLDER": "Промокодты енгізіңіз"
+				},
+
+				"PROMOTION_TYPE": {
+					"LABEL": "Промоакция түрі",
+					"TYPE_CODE": "Промокод жеңілдігі",
+					"TYPE_AUTOMATIC": "Жеткізу жеңілдігі"
+				},
+				"MINIMUM_ORDER_VALUE": {
+					"LABEL": "Тапсырыстың ең төменгі құны",
+					"PLACEHOLDER": "Тапсырыстың ең төменгі құнын енгізіңіз"
+				},
+				"APPLICABLE_CITIES": {
+					"LABEL": "Қолданылатын қалалар",
+					"PLACEHOLDER": "Қолданылатын қалаларды енгізіңіз"
+				},
+				"CREATE_BUTTON": "Құру"
+			},
+			"UPDATE": {
+				"HEADER": "Промоакцияны жаңарту",
+				"DESCRIPTION": {
+					"LABEL": "Сипаттама",
+					"PLACEHOLDER": "Сипаттаманы енгізіңіз"
+				},
+				"DISCOUNT_PERCENTAGE": {
+					"LABEL": "Жеңілдік пайызы",
+					"PLACEHOLDER": "Жеңілдік пайызын енгізіңіз"
+				},
+				"START_DATE": {
+					"LABEL": "Басталу күні"
+				},
+				"IS_ACTIVE": {
+					"LABEL": "Мәртебе"
+				},
+				"END_DATE": {
+					"LABEL": "Аяқталу күні"
+				},
+				"MAX_USAGE": {
+					"LABEL": "Максималды пайдалану",
+					"PLACEHOLDER": "Максималды пайдалану санын енгізіңіз"
+				},
+				"PROMO_CODE": {
+					"LABEL": "Промокод",
+					"PLACEHOLDER": "Промокодты енгізіңіз"
+				},
+				"PROMOTION_TYPE": {
+					"LABEL": "Промоакция түрі",
+					"TYPE_CODE": "Код",
+					"TYPE_AUTOMATIC": "Автоматты"
+				},
+				"MINIMUM_ORDER_VALUE": {
+					"LABEL": "Тапсырыстың ең төменгі құны",
+					"PLACEHOLDER": "Тапсырыстың ең төменгі құнын енгізіңіз"
+				},
+				"APPLICABLE_CITIES": {
+					"LABEL": "Қолданылатын қалалар",
+					"PLACEHOLDER": "Қолданылатын қалаларды енгізіңіз"
+				},
+				"SAVE_BUTTON": "Сақтау"
+			},
+			"DETAILS": {
+				"HEADER": "Промоакция мәліметтері",
+				"INFORMATION": {
+					"LABEL": "Ақпарат",
+					"DESCRIPTION": "Сипаттама",
+					"PROMO_CODE": "Промокод",
+					"DISCOUNT_PERCENTAGE": "Жеңілдік пайызы",
+					"START_DATE": "Басталу күні",
+					"END_DATE": "Аяқталу күні",
+					"PROMOTION_TYPE": "Промоакция түрі",
+					"MINIMUM_ORDER_VALUE": "Тапсырыстың ең төменгі құны",
+					"MAX_USAGE": "Максималды пайдалану",
+					"STATUS": "Мәртебе",
+					"APPLICABLE_CITIES": "Қолданылатын қалалар",
+					"ACTIVE": "Белсенді",
+					"INACTIVE": "Белсенді емес"
+				},
+				"CHARACTERISTICS": {
+					"LABEL": "Сипаттамалар"
+				}
+			}
+		}
+	},
+
+	"ORDER_TRACK": {
+		"HEADER": "Тапсырысты көру",
+		"ORDER_STATUSES": {
+			"LABEL": "Тапсырыс күйі",
+			"CREATED": "Жасалған",
+			"REVIEW_REJECTED_BY_USER": "Төлем шоты қабылданбады",
+			"UPDATED_BY_ADMIN": "Тапсырысты дүкен менеджері жаңартты",
+			"CANCELLED": "Жойылды",
+			"PREPARING": "Дайындалуда",
+			"SHIPPED": "Жөнелтілді",
+			"DELIVERED": "Жеткізілді",
+			"NEXT_DAY_SHIPPING": "Келесі күнгі жеткізу"
+		},
+		"PAYMENT_STATUS": {
+			"LABEL": "Төлем мәртебесі",
+			"PAID": "Төленген",
+			"UNPAID": "Төленбеген"
+		},
+		"PAYMENT_METHODS": {
+			"COD": "Жеткізу кезінде",
+			"ONLINE": "Онлайн"
+		},
+		"ORDER_DETAILS": {
+			"LABEL": "Тапсырыстағы тауарлар",
+			"TABLE": {
+				"NAME": "Атауы",
+				"QUANTITY": "Саны",
+				"PRICE": "Бағасы",
+				"TOTAL": "Жалпы"
+			}
+		},
+		"PAYMENT_DETAILS": {
+			"LABEL": "Төлем ақпараты",
+			"TABLE": {
+				"SUBTOTAL": "Таурлар сомасы",
+				"SHIPPING": "Жеткізу",
+				"DISCOUNT": "Жеңілдік",
+				"TOTAL": "Жалпы",
+				"PAID_SHIPPING": "Курьер арқылы төлем",
+				"FREE_SHIPPING": "Тегін жеткізу"
+			}
+		},
+		"CUSTOMER_DETAILS": {
+			"LABEL": "Клиент ақпараты",
+			"TABLE": {
+				"NAME": "Аты",
+				"PHONE": "Телефоны",
+				"ADDRESS": "Жеткізу мекенжайы",
+				"PAYMENT_METHOD": "Төлем тәсілі"
+			}
+		},
+		"RECEIPT": {
+			"LABEL": "Төлем шоты",
+			"STATUS": "Сатып алушының тексеру статусы",
+			"COMMENT": "Сатып алушының пікірі",
+			"DOCUMENT": "Шотты қарау",
+			"DOWNLOAD": "Жүктеу",
+			"LOADING": "Жүктеуде",
+			"APPROVED": "Расталды",
+			"REJECTED": "Қабылданбады",
+			"UNREVIEWED": "Сатып алушы тарапынан тексерілмеген",
+			"EMPTY_COMMENT": "Пікір жоқ"
+		}
+	},
+	"CATEGORIES": {
+		"PAGE": "Санаттар",
+		"TITLE": "Санаттарды Басқару",
+		"EXPORT": "Экспорт",
+		"CREATE": "Жаңа",
+		"FILTER": {
+			"TERM": "Іздеу",
+			"SORT": {
+				"DATE_ASC": "Күні бойынша ↗",
+				"DATE_DESC": "Күні бойынша ↘"
+			},
+
+			"VIEW": {
+				"TABLE": "Кесте",
+				"LIST": "Тізім"
+			}
+		},
+		"TABLE": {
+			"NAME": "Аты"
+		},
+		"DIALOGS": {
+			"CREATE": {
+				"HEADER": "Категория құру",
+				"NAME": {
+					"LABEL": "Атау",
+					"PLACEHOLDER": "Атау енгізіңіз"
+				},
+				"IMAGE": {
+					"LABEL": "Сурет",
+					"PLACEHOLDER": "Категория суретін жүктеңіз"
+				},
+				"CREATE_BUTTON": "Құру"
+			},
+			"UPDATE": {
+				"HEADER": "Категорияны жаңарту",
+				"NAME": {
+					"LABEL": "Атау",
+					"PLACEHOLDER": "Атау енгізіңіз"
+				},
+				"SAVE_BUTTON": "Сақтау"
+			},
+			"DETAILS": {
+				"HEADER": "Категория толық мәліметтері",
+				"NAME": "Атау"
+			}
+		}
+	},
+	"SUB_CATEGORIES": {
+		"PAGE": "Ішкі санаттар",
+		"TITLE": "Ішкі Санаттарды Басқару",
+		"EXPORT": "Экспорт",
+		"CREATE": "Жаңа",
+		"FILTER": {
+			"TERM": "Іздеу",
+			"SORT": {
+				"DATE_ASC": "Күні бойынша ↗",
+				"DATE_DESC": "Күні бойынша ↘"
+			},
+			"VIEW": {
+				"TABLE": "Кесте",
+				"LIST": "Тізім"
+			}
+		},
+		"TABLE": {
+			"NAME": "Аты"
+		},
+		"DIALOGS": {
+			"CREATE": {
+				"HEADER": "Ішкі санатты құру",
+				"NAME": {
+					"LABEL": "Атау",
+					"PLACEHOLDER": "Атау енгізіңіз"
+				},
+				"CATEGORY": {
+					"LABEL": "Ата-анасы",
+					"PLACEHOLDER": "Ата-анасын таңдаңыз"
+				},
+				"CREATE_BUTTON": "Құру"
+			},
+			"UPDATE": {
+				"HEADER": "Ішкі санатты жаңарту",
+				"NAME": {
+					"LABEL": "Атау",
+					"PLACEHOLDER": "Атау енгізіңіз"
+				},
+				"CATEGORY": {
+					"LABEL": "Cанаты",
+					"PLACEHOLDER": "Санатын таңдаңыз"
+				},
+				"SAVE_BUTTON": "Сақтау"
+			},
+			"DETAILS": {
+				"HEADER": "Ішкі санаттың толық мәліметтері",
+				"NAME": "Атау",
+				"CATEGORY": "Cанаты"
+			}
+		}
+	},
+	"PRODUCTS": {
+		"PAGE": "Тауарлар",
+		"TITLE": "Тауарларды Басқару",
+		"EXPORT": "Экспорт",
+		"CREATE": "Жаңа",
+		"FILTER": {
+			"TERM": "Іздеу",
+			"SORT": {
+				"DATE_ASC": "Күні бойынша ↗",
+				"DATE_DESC": "Күні бойынша ↘"
+			},
+			"SUB_CATEGORY": {
+				"LABEL": "Ішкі санат",
+				"NONE": "Таңдалмаған"
+			},
+			"VIEW": {
+				"TABLE": "Кесте",
+				"LIST": "Тізім"
+			}
+		},
+		"TABLE": {
+			"NAME": "Аты",
+			"CODE": "Код",
+			"SUB_CATEGORY": "Ішкі санат",
+			"PRICE": "Бағасы",
+			"IN_STOCK": "Қоймада",
+			"VISIBILITY": {
+				"LABEL": "Көріну",
+				"VISIBLE": "Көрінетін",
+				"HIDDEN": "Жасырын"
+			}
+		},
+		"DIALOGS": {
+			"DETAILS": {
+				"HEADER": "Товардың мәліметтері",
+				"INFORMATION": {
+					"LABEL": "Мәліметтер",
+					"NAME": "Атауы",
+					"DESCRIPTION": "Сипаттама",
+					"BARCODE": "Баркод",
+					"PRODUCT_CODE": "Товар коды",
+					"PRICE": "Баға",
+					"STOCK": "Складда",
+					"SUB_CATEGORY": "Субкатегория",
+					"CREATED_DATE": "Жасалған күні"
+				},
+				"CHARACTERISTICS": {
+					"LABEL": "Сипаттамалар",
+					"EXTRA_DESCRIPTION": "Қосымша сипаттама",
+					"MEASURE_UNIT": "Өлшем бірлігі",
+					"SIZE": "Өлшемі",
+					"COLOR": "Түсі",
+					"MANUFACTURER": "Өндіруші",
+					"ITEMS_PACKAGE": "Тауарлар саны",
+					"ONECNAME": "1С атауы",
+					"LABELS": "Таралған атаулар"
+				},
+				"BARCODE": {
+					"LABEL": "Штрих-код",
+					"PRINT_BUTTON": "Басып шығару"
+				}
+			},
+			"CREATE": {
+				"HEADER": "Жаңа тауар",
+				"INFORMATION": {
+					"LABEL": "Ақпарат",
+					"NAME": {
+						"LABEL": "Атауы",
+						"PLACEHOLDER": "Атау енгізіңіз"
+					},
+					"DESCRIPTION": {
+						"LABEL": "Сипаттама",
+						"PLACEHOLDER": "Сипаттама енгізіңіз"
+					},
+					"BARCODE": {
+						"LABEL": "Баркод",
+						"PLACEHOLDER": "Баркод енгізіңіз"
+					},
+					"PRODUCT_CODE": {
+						"LABEL": "Артикул",
+						"PLACEHOLDER": "Артикул кодын енгізіңіз"
+					},
+					"PRICE": {
+						"LABEL": "Баға",
+						"PLACEHOLDER": "Баға енгізіңіз"
+					},
+					"STOCK": {
+						"LABEL": "Складда",
+						"PLACEHOLDER": "Складда бар қол жетімді санын енгізіңіз"
+					},
+					"SUB_CATEGORY": {
+						"LABEL": "Салық",
+						"PLACEHOLDER": "Салықты енгізіңіз"
+					},
+					"CATEGORY": {
+						"LABEL": "Санат",
+						"PLACEHOLDER": "Санатты енгізіңіз"
+					},
+					"IMAGE": {
+						"LABEL": "Көрсету суреті",
+						"PLACEHOLDER": "Көрсету суретін толтырыңыз"
+					}
+				},
+				"CHARACTERISTICS": {
+					"LABEL": "Сипаттамалар",
+					"EXTRA_DESCRIPTION": {
+						"LABEL": "Қосымша сипаттама",
+						"PLACEHOLDER": "Қосымша сипаттаманы енгізіңіз"
+					},
+					"MEASURE_UNIT": {
+						"LABEL": "Өлшем бірлігі",
+						"PLACEHOLDER": "Өлшем бірлігін енгізіңіз"
+					},
+					"SIZE": {
+						"LABEL": "Өлшем",
+						"PLACEHOLDER": "Өлшемді енгізіңіз"
+					},
+					"COLOR": {
+						"LABEL": "Түс",
+						"PLACEHOLDER": "Түсті енгізіңіз"
+					},
+					"MANUFACTURER": {
+						"LABEL": "Өндіруші",
+						"PLACEHOLDER": "Өндірушіні енгізіңіз"
+					},
+					"ITEMS_PACKAGE": {
+						"LABEL": "Тауарлар саны",
+						"PLACEHOLDER": "Бір пакеттің тауарлар саның енгізіңіз"
+					},
+					"ONECNAME": {
+						"LABEL": "1С-дең атауы",
+						"PLACEHOLDER": "1С-дең атауын енгізіңіз"
+					},
+					"LABELS": {
+						"LABEL": "Белгілер",
+						"PLACEHOLDER": "Белгілерді үтір арқылы енгізіңіз ','"
+					}
+				},
+				"CREATE_BUTTON": "Тауарды сақтау",
+				"GENERATE_BUTTON": "Генерациялау"
+			},
+			"UPDATE": {
+				"HEADER": "Тауарды жаңарту",
+				"INFORMATION": {
+					"LABEL": "Ақпарат",
+					"NAME": {
+						"LABEL": "Атауы",
+						"PLACEHOLDER": "Атау енгізіңіз"
+					},
+					"DESCRIPTION": {
+						"LABEL": "Сипаттама",
+						"PLACEHOLDER": "Сипаттама енгізіңіз"
+					},
+					"BARCODE": {
+						"LABEL": "Баркод",
+						"PLACEHOLDER": "Баркод енгізіңіз"
+					},
+					"PRODUCT_CODE": {
+						"LABEL": "Артикул",
+						"PLACEHOLDER": "Артикул кодын енгізіңіз"
+					},
+					"PRICE": {
+						"LABEL": "Баға",
+						"PLACEHOLDER": "Баға енгізіңіз"
+					},
+					"STOCK": {
+						"LABEL": "Складда",
+						"PLACEHOLDER": "Складда бар қол жетімді санын енгізіңіз"
+					},
+					"SUB_CATEGORY": {
+						"LABEL": "Салық",
+						"PLACEHOLDER": "Салықты енгізіңіз"
+					},
+					"IMAGE": {
+						"LABEL": "Көрсету суреті",
+						"PLACEHOLDER": "Көрсету суретін толтырыңыз"
+					}
+				},
+				"CHARACTERISTICS": {
+					"LABEL": "Сипаттамалар",
+					"EXTRA_DESCRIPTION": {
+						"LABEL": "Қосымша сипаттама",
+						"PLACEHOLDER": "Қосымша сипаттаманы енгізіңіз"
+					},
+					"MEASURE_UNIT": {
+						"LABEL": "Өлшем бірлігі",
+						"PLACEHOLDER": "Өлшем бірлігін енгізіңіз"
+					},
+					"SIZE": {
+						"LABEL": "Өлшем",
+						"PLACEHOLDER": "Өлшемді енгізіңіз"
+					},
+					"COLOR": {
+						"LABEL": "Түс",
+						"PLACEHOLDER": "Түсті енгізіңіз"
+					},
+					"MANUFACTURER": {
+						"LABEL": "Өндіруші",
+						"PLACEHOLDER": "Өндірушіні енгізіңіз"
+					},
+					"ITEMS_PACKAGE": {
+						"LABEL": "Тауарлар саны",
+						"PLACEHOLDER": "Бір пакеттің тауарлар саның енгізіңіз"
+					},
+					"ONECNAME": {
+						"LABEL": "1С-дең атауы",
+						"PLACEHOLDER": "1С-дең атауын енгізіңіз"
+					},
+					"LABELS": {
+						"LABEL": "Белгілер",
+						"PLACEHOLDER": "Белгілерді үтір арқылы енгізіңіз ','"
+					},
+					"VISIBILITY": {
+						"LABEL": "Таурдын көріну күйі",
+						"PLACEHOLDER": "Таурдын көріну күйін танданыз",
+						"VISIBLE": "Көрінетін",
+						"HIDDEN": "Жасырын"
+					}
+				},
+				"UPDATE_BUTTON": "Тауарды сақтау"
+			}
+		}
+	},
+	"COMPANY_USERS": {
+		"PAGE": "Қызметкерлер",
+		"TITLE": "Қызметкерлерді Басқару",
+		"EXPORT": "Экспорт",
+		"CREATE": "Жаңа",
+		"FILTER": {
+			"TERM": "Іздеу",
+			"SORT": {
+				"DATE_ASC": "Күні бойынша ↗",
+				"DATE_DESC": "Күні бойынша ↘"
+			},
+			"VIEW": {
+				"TABLE": "Кесте",
+				"LIST": "Тізім"
+			}
+		},
+		"TABLE": {
+			"NAME": "Аты",
+			"PHONE": "Телефон"
+		},
+		"DIALOGS": {
+			"CREATE": {
+				"HEADER": "Жаңа компания мүшесін қосу",
+				"NAME": {
+					"LABEL": "Толық аты",
+					"PLACEHOLDER": "Толық атын енгізіңіз"
+				},
+				"PHONE": {
+					"LABEL": "Телефон нөмірі",
+					"PLACEHOLDER": "Телефон нөмірін енгізіңіз"
+				},
+				"PASSWORD": {
+					"LABEL": "Құпия сөз",
+					"PLACEHOLDER": "Құпия сөзді енгізіңіз"
+				},
+				"CREATE_BUTTON": "Мүшесін сақтау"
+			},
+			"DETAILS": {
+				"HEADER": "Компания мүшесі толықтамасы",
+				"NAME": "Атауы",
+				"PHONE": "Телефон нөмірі",
+				"ADDRESS": "Мекен-жай",
+				"CREATED_DATE": "Жасалған күні"
+			}
+		}
+	},
+	"USERS": {
+		"PAGE": "Қолданушылар",
+		"TITLE": "Қолданушыларды басқару",
+		"EXPORT": "Экспорт",
+		"CREATE": "Қосу",
+		"FILTER": {
+			"TERM": "Іздеу",
+			"SORT": {
+				"DATE_ASC": "Жасалған күн ↗",
+				"DATE_DESC": "Жасалған күн ↘"
+			},
+			"VIEW": {
+				"TABLE": "Кесте",
+				"LIST": "Тізім"
+			}
+		},
+		"TABLE": {
+			"NAME": "Аты",
+			"PHONE": "Телефон",
+			"ROLE": "Рөл",
+			"CREATED_AT": "Жасалған күн"
+		},
+		"DIALOGS": {
+			"CREATE": {
+				"HEADER": "Жаңа қолданушыны қосу",
+				"PERSONAL": {
+					"LABEL": "Жеке ақпарат",
+					"FIRST_NAME": {
+						"LABEL": "Аты",
+						"PLACEHOLDER": "Атыңызды енгізіңіз"
+					},
+					"LAST_NAME": {
+						"LABEL": "Тегі",
+						"PLACEHOLDER": "Тегіңізді енгізіңіз"
+					},
+					"PHONE": {
+						"LABEL": "Телефон нөмірі",
+						"PLACEHOLDER": "Телефон нөмірін енгізіңіз"
+					},
+					"PASSWORD": {
+						"LABEL": "Құпия сөз",
+						"PLACEHOLDER": "Құпия сөзді енгізіңіз"
+					}
+				},
+				"COMPANY": {
+					"LABEL": "Компания ақпараты",
+					"NAME": {
+						"LABEL": "Компания атауы",
+						"PLACEHOLDER": "Компания атауын енгізіңіз"
+					},
+					"DESCRIPTION": {
+						"LABEL": "Компания сипаттамасы",
+						"PLACEHOLDER": "Компания сипаттамасын енгізіңіз"
+					},
+					"PHONE": {
+						"LABEL": "Компания телефоны",
+						"PLACEHOLDER": "Компания телефонын енгізіңіз"
+					},
+					"ADDRESS": {
+						"LABEL": "Компания мекен-жайы",
+						"PLACEHOLDER": "Компания мекен-жайын енгізіңіз"
+					},
+					"CITY": {
+						"LABEL": "Компания орналасқан қала",
+						"PLACEHOLDER": "Компания орналасқан қаланы енгізіңіз"
+					},
+					"TYPE": {
+						"LABEL": "Түрі",
+						"PLACEHOLDER": "Түрді таңдаңыз",
+						"CLINIC": "Емхана",
+						"STORE": "Дүкен"
+					}
+				},
+				"CREATE_BUTTON": "Сақтау"
+			},
+			"DETAILS": {
+				"HEADER": "Қолданушы толығырақтары",
+				"NAME": "Аты",
+				"PHONE": "Телефон нөмірі",
+				"ADDRESS": "Мекен-жай",
+				"ROLES": "Жүйелік рөлі",
+				"CREATED_DATE": "Жасалған күні"
+			}
+		}
+	},
+	"PAGINATION": {
+		"NEXT": "Алға",
+		"PREVIOUS": "Артқа"
+	},
+	"AUTH": {
+		"LOGIN": {
+			"LABEL": "Кіру",
+			"HEADER": "Қайтадан қош келдіңіз!",
+			"SUBTITLE": "DentX профильге кіру",
+			"PHONE": {
+				"LABEL": "Телефон нөмірі",
+				"PLACEHOLDER": "Телефон нөмірін енгізіңіз"
+			},
+			"PASSWORD": {
+				"LABEL": "Құпия сөз",
+				"PLACEHOLDER": "Құпия сөзді енгізіңіз"
+			},
+			"LOGIN_BUTTON": "Жіберу",
+			"ALTERNATIVES": "Тіркелу мүмкін емес?"
+		},
+		"SIGNUP": {
+			"LABEL": "Тіркелу",
+			"HEADER": "Тіркеу",
+			"SUBTITLE": "DentX Аккаунтыңызды жасау",
+			"PERSONAL": {
+				"LABEL": "Жеке ақпарат",
+				"FIRST_NAME": {
+					"LABEL": "Аты",
+					"PLACEHOLDER": "Атыңызды енгізіңіз"
+				},
+				"LAST_NAME": {
+					"LABEL": "Тегі",
+					"PLACEHOLDER": "Тегіңізді енгізіңіз"
+				},
+				"PHONE": {
+					"LABEL": "Телефон нөмірі",
+					"PLACEHOLDER": "Телефон нөмірін енгізіңіз"
+				},
+				"PASSWORD": {
+					"LABEL": "Құпия сөз",
+					"PLACEHOLDER": "Құпия сөзді енгізіңіз"
+				}
+			},
+			"COMPANY": {
+				"LABEL": "Дүкен ақпараты",
+				"NAME": {
+					"LABEL": "Дүкен атауы",
+					"PLACEHOLDER": "Дүкен атауын енгізіңіз"
+				},
+				"IINBIN": {
+					"LABEL": "ЖСН/БСН",
+					"PLACEHOLDER": "Дүкен ЖСН/БСН енгізіңіз"
+				},
+				"DESCRIPTION": {
+					"LABEL": "Дүкен сипаттамасы",
+					"PLACEHOLDER": "Дүкен сипаттамасын енгізіңіз"
+				},
+				"PHONE": {
+					"LABEL": "Дүкен телефоны",
+					"PLACEHOLDER": "Дүкен телефонын енгізіңіз"
+				},
+				"ADDRESS": {
+					"LABEL": "Дүкен мекен-жайы",
+					"PLACEHOLDER": "Дүкен мекен-жайын енгізіңіз"
+				},
+				"CITY": {
+					"LABEL": "Дүкен орналасқан қала",
+					"PLACEHOLDER": "Дүкен орналасқан қаланы енгізіңіз"
+				},
+				"TYPE": {
+					"LABEL": "Түрі",
+					"PLACEHOLDER": "Түрді таңдаңыз",
+					"CLINIC": "Емхана",
+					"STORE": "Дүкен"
+				}
+			},
+			"SIGNUP_BUTTON": "Жіберу",
+			"ALTERNATIVES": "Аккаунтыңыз бар ма?"
+		},
+		"LOGOUT": {
+			"LABEL": "Шығу"
+		}
+	},
+	"ADMIN_SETTINGS": {
+		"PAGE": "Параметрлер"
+	},
+	"MONITORING": {
+		"PAGE": "Мониторинг",
+		"PLATFORM_METRICS": {
+			"LABEL": "Платформа көрсеткіштері",
+			"CUSTOMERS": "Тұтынушылар",
+			"STORES": "Дүкендер",
+			"PRODUCTS": "Өнімдер",
+			"COMPLETED_ORDERS": "Аяқталған тапсырыстар",
+			"MONTHLY_ACTIVE_USERS": "Осы айдағы белсенді пайдаланушылар",
+			"REGISTERED_USERS_THIS_MONTH": "Осы айда тіркелген пайдаланушылар",
+			"REGISTERED_USERS_GRAPH": {
+				"LABEL": "Пайдаланушылардың тіркелуі",
+				"DESCRIPTION": "Әр айда тіркелген пайдаланушылардың санын көрсетеді"
+			},
+			"CREATED_AND_COMPLETED_ORDERS": {
+				"LABEL": "Тапсырыс шолуы",
+				"DESCRIPTION": "Құрастырылған және аяқталған тапсырыстардың айлық жиынтықтарын көрсетеді",
+				"CREATED": "Жасалған",
+				"COMPLETED": "Орындалған"
+			}
+		},
+		"STORES_METRICS": {
+			"LABEL": "Дүкен аналитикасы",
+			"STORES": "Дүкенді таңдаңыз",
+			"EMPTY": "Дүкен таңдалмаған",
+			"STATISTICS": {
+				"TOTAL_SALES_THIS_MONTH": "Ағымдағы айдағы жалпы сатылымдар",
+				"AVG_SALES_THIS_MONTH": "Ағымдағы айдағы орташа күндік сатылымдар",
+				"TOTAL_ORDERS_THIS_MONTH": "Ағымдағы айдағы жалпы тапсырыстар саны",
+				"LAST_MONTH": "Өткен аймен салыстырғанда",
+				"TOTAL_SALES": "Жалпы сатылымдар",
+				"TOTAL_ORDERS": "Жалпы тапсырыстар саны",
+				"ACTIVE_ORDERS": "Белсенді тапсырыстар",
+				"COMPLETED_ORDERS": "Аяқталған тапсырыстар",
+				"PRODUCTS": "Тауарлар саны",
+				"EMPLOYEES": "Қызметкерлер саны"
+			},
+			"REVENUE_GRAPH": {
+				"LABEL": "Кезең бойынша табыс",
+				"DESCRIPTION": "Таңдалған кезеңдердегі тапсырыстардан түскен табысты көрсетеді",
+				"PERIODS": {
+					"PLACEHOLDER": "Кезеңді таңдаңыз",
+					"ONE_DAY": "1 Күн",
+					"FIVE_DAYS": "5 Күн",
+					"ONE_MONTH": "1 Ай",
+					"SIX_MONTHS": "6 Ай",
+					"MAX": "Макс"
+				}
+			}
+		}
+	}
+}

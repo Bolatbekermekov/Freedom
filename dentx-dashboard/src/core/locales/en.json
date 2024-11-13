@@ -1,0 +1,968 @@
+{
+	"FILTERS": {
+		"LABEL": "Filter",
+		"VIEW": "View",
+		"SORT": "Sort",
+		"STATUS": "Status",
+		"RESET": "Reset",
+		"APPLY": "Apply",
+		"DATE_PICKER": "Pick a date",
+		"PROMOTION_TYPE": "Promotion"
+	},
+	"HOME": {
+		"TITLE": "Welcome Back!",
+		"SUB_TITLE": "Enter the DentX admin panel"
+	},
+	"DASHBOARD": {
+		"PAGE": "Dashboard",
+		"TOTALS": {
+			"SALES": "Sales",
+			"PRODUCTS": "Products",
+			"ORDERS": "Orders",
+			"ACTIVE_ORDERS": "Active orders",
+			"COMPLETED_ORDERS": "Completed orders",
+			"MEMBERS": "Company members"
+		},
+		"SALES_BY_PERIOD": {
+			"LABEL": "Sales",
+			"SUBTITLE": "Line of sales by period",
+			"PERIODS": {
+				"PLACEHOLDER": "Select period",
+				"ONE_DAY": "1 day",
+				"FIVE_DAYS": "5 days",
+				"ONE_MONTH": "1 month",
+				"SIX_MONTHS": "6 months",
+				"MAX": "Max"
+			}
+		},
+		"STATUSES_BY_MONTH": {
+			"LABEL": "Order statuses",
+			"SUBTITLE": "Bar chart of orders by statuses"
+		},
+		"ASSIGNEES_BY_ORDERS": {
+			"LABEL": "Assigned orders",
+			"SUBTITLE": "Bar chart of orders by assigned members"
+		},
+		"SUPERADMIN": {
+			"LABEL": "Superadmin Analytics",
+			"TOTALS": {
+				"USERS": "Users",
+				"CLINICS": "Clinics",
+				"STORES": "Stores"
+			}
+		},
+		"PERIODS": {
+			"LABEL": "Periods",
+			"DAILY": "Daily",
+			"WEEKLY": "Weekly",
+			"MONTHLY": "Monthly",
+			"QUARTERLY": "Quarterly",
+			"YEARLY": "Yearly"
+		}
+	},
+	"ORDERS": {
+		"PAGE": "Orders",
+		"TITLE": "Orders Management",
+		"EXPORT": "Export",
+		"CREATE": "Create",
+		"FILTER": {
+			"TERM": "Search",
+			"SORT": {
+				"DATE_ASC": "By date ↗",
+				"DATE_DESC": "By date ↘"
+			},
+			"STATUSES": {
+				"ALL": "All",
+				"ACTIVE": "Active",
+				"CREATED": "Created",
+				"REVIEW_REJECTED_BY_USER": "Payment invoice rejected",
+				"UPDATED_BY_ADMIN": "Updated by store manager",
+				"CANCELLED": "Cancelled",
+				"PREPARING": "Preparing",
+				"SHIPPED": "Shipped",
+				"DELIVERED": "Delivered",
+				"NEXT_DAY_SHIPPING": "Next day shipping"
+			},
+			"VIEW": {
+				"TABLE": "Table",
+				"LIST": "List"
+			}
+		},
+		"TABLE": {
+			"PRODUCTS": "Products",
+			"DATE": "Created Date",
+			"QUANTITY": "Quantity",
+			"BARCODE": "Barcode",
+			"TOTAL": "Total",
+			"STATUS": "Status",
+			"ASSIGNEE": "Assignee"
+		},
+		"DIALOGS": {
+			"CREATE": {
+				"HEADER": "Create new order",
+				"PRODUCTS": {
+					"LABEL": "Products",
+					"TABLE": {
+						"NAME": "Name",
+						"QUANTITY": "Quantity",
+						"PRICE": "Price",
+						"TOTAL": "Total"
+					},
+					"SELECT_PRODUCT": "Select a product"
+				},
+				"SHIPPING": {
+					"LABEL": "Shipping",
+					"PAYMENT": {
+						"LABEL": "Payment",
+						"PLACEHOLDER": "Enter payment method",
+						"COD": "On delivery",
+						"ONLINE": "Online"
+					},
+					"CUSTOMER_NAME": {
+						"LABEL": "Customer name",
+						"PLACEHOLDER": "Enter a customer name"
+					},
+					"CUSTOMER_PHONE": {
+						"LABEL": "Customer phone",
+						"PLACEHOLDER": "Enter a customer phone"
+					},
+					"SHIPPING_CHARGES": {
+						"LABEL": "Shipping Type",
+						"PLACEHOLDER": "Select shipping type",
+						"FREE": "Free Shipping",
+						"PAID": "Courier Payment"
+					},
+					"ADDRESS": {
+						"LABEL": "Address",
+						"PLACEHOLDER": "Enter a full delivery address"
+					},
+					"COUNTRY": {
+						"LABEL": "Country",
+						"PLACEHOLDER": "Enter a delivery country"
+					},
+					"CITY": {
+						"LABEL": "City",
+						"PLACEHOLDER": "Enter a delivery city"
+					}
+				},
+				"CREATE_BUTTON": "Create order"
+			},
+			"ASSIGN": {
+				"HEADER": "Assign member to order",
+				"USER": {
+					"LABEL": "Company member",
+					"PLACEHOLDER": "Select a company member"
+				},
+				"ASSIGN_BUTTON": "Assign"
+			},
+			"UPDATE": {
+				"HEADER": "Update an order",
+				"UPDATE_BUTTON": "Update"
+			}
+		}
+	},
+
+	"PROMOTIONS": {
+		"PAGE": "Promotions",
+		"TITLE": "Promotions Management",
+		"EXPORT": "Export",
+		"CREATE": "Create",
+		"FILTER": {
+			"TERM": "Search",
+			"SORT": {
+				"DATE_ASC": "By creation date ↗",
+				"DATE_DESC": "By creation date ↘"
+			},
+			"VIEW": {
+				"TABLE": "Table",
+				"LIST": "List"
+			},
+
+			"PROMOTIONS": {
+				"ALL": "All",
+				"AUTOMATIC": "Delivery Discount",
+				"CODE": "Promo Code Discount"
+			}
+		},
+		"TABLE": {
+			"DESCRIPTION": "Description",
+			"DISCOUNT_PERCENTAGE": "Discount Percentage",
+			"DISCOUNT": "Discount",
+			"START_DATE": "Start Date",
+			"END_DATE": "End Date",
+			"PROMO_CODE": "Promo Code",
+			"PROMOTION_TYPE": "Promotion Type",
+			"MAX_USAGE": "Max Usage",
+			"MINIMUM_ORDER_VALUE": "Minimum Order Value",
+			"STATUS": "Status",
+			"APPLICABLE_CITIES": "Applicable Cities"
+		},
+		"STATUS": {
+			"ACTIVE": "Active",
+			"INACTIVE": "Inactive"
+		},
+		"PROMOTION_TYPE_LABELS": {
+			"CODE": "Promo Code Discount",
+			"AUTOMATIC": "Delivery Discount"
+		},
+		"DIALOGS": {
+			"CREATE": {
+				"HEADER": "Create a promotion",
+				"DESCRIPTION": {
+					"LABEL": "Description",
+					"PLACEHOLDER": "Enter a description"
+				},
+				"DISCOUNT_PERCENTAGE": {
+					"LABEL": "Discount Percentage",
+					"PLACEHOLDER": "Enter the discount percentage"
+				},
+				"START_DATE": {
+					"LABEL": "Start Date"
+				},
+				"END_DATE": {
+					"LABEL": "End Date"
+				},
+				"MAX_USAGE": {
+					"LABEL": "Max Usage",
+					"PLACEHOLDER": "Enter the maximum usage"
+				},
+				"PROMO_CODE": {
+					"LABEL": "Promo Code",
+					"PLACEHOLDER": "Enter the promo code"
+				},
+
+				"PROMOTION_TYPE": {
+					"LABEL": "Promotion Type",
+					"TYPE_CODE": "Promo Code Discount",
+					"TYPE_AUTOMATIC": "Delivery Discount"
+				},
+				"MINIMUM_ORDER_VALUE": {
+					"LABEL": "Minimum Order Value",
+					"PLACEHOLDER": "Enter the minimum order value"
+				},
+				"APPLICABLE_CITIES": {
+					"LABEL": "Applicable Cities",
+					"PLACEHOLDER": "Enter the applicable cities"
+				},
+				"CREATE_BUTTON": "Create"
+			},
+			"UPDATE": {
+				"HEADER": "Update promotion",
+				"DESCRIPTION": {
+					"LABEL": "Description",
+					"PLACEHOLDER": "Enter a description"
+				},
+				"DISCOUNT_PERCENTAGE": {
+					"LABEL": "Discount Percentage",
+					"PLACEHOLDER": "Enter the discount percentage"
+				},
+				"START_DATE": {
+					"LABEL": "Start Date"
+				},
+				"IS_ACTIVE": {
+					"LABEL": "Status"
+				},
+				"END_DATE": {
+					"LABEL": "End Date"
+				},
+				"MAX_USAGE": {
+					"LABEL": "Max Usage",
+					"PLACEHOLDER": "Enter the maximum usage"
+				},
+				"PROMO_CODE": {
+					"LABEL": "Promo Code",
+					"PLACEHOLDER": "Enter the promo code"
+				},
+				"PROMOTION_TYPE": {
+					"LABEL": "Promotion Type",
+					"TYPE_CODE": "Code",
+					"TYPE_AUTOMATIC": "Automatic"
+				},
+				"MINIMUM_ORDER_VALUE": {
+					"LABEL": "Minimum Order Value",
+					"PLACEHOLDER": "Enter the minimum order value"
+				},
+				"APPLICABLE_CITIES": {
+					"LABEL": "Applicable Cities",
+					"PLACEHOLDER": "Enter the applicable cities"
+				},
+				"SAVE_BUTTON": "Save"
+			},
+			"DETAILS": {
+				"HEADER": "Promotion Details",
+				"INFORMATION": {
+					"LABEL": "Information",
+					"DESCRIPTION": "Description",
+					"PROMO_CODE": "Promo Code",
+					"DISCOUNT_PERCENTAGE": "Discount Percentage",
+					"START_DATE": "Start Date",
+					"END_DATE": "End Date",
+					"PROMOTION_TYPE": "Promotion Type",
+					"MINIMUM_ORDER_VALUE": "Minimum Order Value",
+					"MAX_USAGE": "Max Usage",
+					"STATUS": "Status",
+					"APPLICABLE_CITIES": "Applicable Cities",
+					"ACTIVE": "Active",
+					"INACTIVE": "Inactive"
+				},
+				"CHARACTERISTICS": {
+					"LABEL": "Characteristics"
+				}
+			}
+		}
+	},
+	"ORDER_TRACK": {
+		"HEADER": "Track order",
+		"ORDER_STATUSES": {
+			"LABEL": "Order status",
+			"CREATED": "Created",
+			"REVIEW_REJECTED_BY_USER": "Payment invoice rejected",
+			"UPDATED_BY_ADMIN": "Updated by store manager",
+			"CANCELLED": "Cancelled",
+			"PREPARING": "Preparing",
+			"SHIPPED": "Shipped",
+			"DELIVERED": "Delivered",
+			"NEXT_DAY_SHIPPING": "Next day shipping"
+		},
+		"PAYMENT_STATUS": {
+			"LABEL": "Payment status",
+			"PAID": "Paid",
+			"UNPAID": "Unpaid"
+		},
+		"PAYMENT_METHODS": {
+			"COD": "On delivery",
+			"ONLINE": "Online"
+		},
+		"ORDER_DETAILS": {
+			"LABEL": "Order items",
+			"TABLE": {
+				"NAME": "Product name",
+				"BARCODE": "Barcode",
+				"QUANTITY": "Qty",
+				"PRICE": "Price",
+				"TOTAL": "Total"
+			}
+		},
+		"PAYMENT_DETAILS": {
+			"LABEL": "Payment Details",
+			"TABLE": {
+				"SUBTOTAL": "Subtotal",
+				"SHIPPING": "Shipping",
+				"DISCOUNT": "Discount",
+				"TOTAL": "Total",
+				"PAID_SHIPPING": "Courier Payment",
+				"FREE_SHIPPING": "Free Shipping"
+			}
+		},
+		"CUSTOMER_DETAILS": {
+			"LABEL": "Customer information",
+			"TABLE": {
+				"NAME": "Name",
+				"PHONE": "PHONE",
+				"ADDRESS": "Shipping address",
+				"PAYMENT_METHOD": "Payment method"
+			}
+		},
+		"RECEIPT": {
+			"LABEL": "Invoice",
+			"STATUS": "Customer review status",
+			"COMMENT": "Customer comment",
+			"DOCUMENT": "View invoice",
+			"DOWNLOAD": "Download",
+			"LOADING": "Loading",
+			"APPROVED": "Approved",
+			"REJECTED": "Rejected",
+			"UNREVIEWED": "Unreviewed by customer",
+			"EMPTY_COMMENT": "No comment"
+		}
+	},
+	"CATEGORIES": {
+		"PAGE": "Categories",
+		"TITLE": "Categories Management",
+		"EXPORT": "Export",
+		"CREATE": "Create",
+		"FILTER": {
+			"TERM": "Search",
+			"SORT": {
+				"DATE_ASC": "By creation date ↗",
+				"DATE_DESC": "By creation date ↘"
+			},
+			"VIEW": {
+				"TABLE": "Table",
+				"LIST": "List"
+			}
+		},
+		"TABLE": {
+			"NAME": "Name"
+		},
+		"DIALOGS": {
+			"CREATE": {
+				"HEADER": "Create a category",
+				"NAME": {
+					"LABEL": "Name",
+					"PLACEHOLDER": "Enter a name"
+				},
+				"IMAGE": {
+					"LABEL": "Image",
+					"PLACEHOLDER": "Upload the category image"
+				},
+				"CREATE_BUTTON": "Create"
+			},
+			"UPDATE": {
+				"HEADER": "Update category",
+				"NAME": {
+					"LABEL": "Name",
+					"PLACEHOLDER": "Enter a name"
+				},
+				"SAVE_BUTTON": "Save"
+			},
+			"DETAILS": {
+				"HEADER": "Category details",
+				"NAME": "Name"
+			}
+		}
+	},
+	"SUB_CATEGORIES": {
+		"PAGE": "Subcategories",
+		"TITLE": "Subcategories Management",
+		"EXPORT": "Export",
+		"CREATE": "Create",
+		"FILTER": {
+			"TERM": "Search",
+			"SORT": {
+				"DATE_ASC": "Created date ↗",
+				"DATE_DESC": "Created date ↘"
+			},
+			"VIEW": {
+				"TABLE": "Table",
+				"LIST": "List"
+			}
+		},
+		"TABLE": {
+			"NAME": "Name"
+		},
+		"DIALOGS": {
+			"CREATE": {
+				"HEADER": "Create a subcategory",
+				"NAME": {
+					"LABEL": "Name",
+					"PLACEHOLDER": "Enter a name"
+				},
+				"CATEGORY": {
+					"LABEL": "Parent category",
+					"PLACEHOLDER": "Select a parent category"
+				},
+				"CREATE_BUTTON": "Create"
+			},
+			"UPDATE": {
+				"HEADER": "Update a subcategory",
+				"NAME": {
+					"LABEL": "Name",
+					"PLACEHOLDER": "Enter a name"
+				},
+				"CATEGORY": {
+					"LABEL": "Parent category",
+					"PLACEHOLDER": "Select a parent category"
+				},
+				"SAVE_BUTTON": "Save"
+			},
+			"DETAILS": {
+				"HEADER": "Subcategory details",
+				"NAME": "Name",
+				"CATEGORY": "Parent category"
+			}
+		}
+	},
+	"PRODUCTS": {
+		"PAGE": "Products",
+		"TITLE": "Products Management",
+		"EXPORT": "Export",
+		"CREATE": "Create",
+		"FILTER": {
+			"TERM": "Search",
+			"SORT": {
+				"DATE_ASC": "Created date ↗",
+				"DATE_DESC": "Created date ↘"
+			},
+			"SUB_CATEGORY": {
+				"LABEL": "Subcategory",
+				"NONE": "Not selected"
+			},
+			"VIEW": {
+				"TABLE": "Table",
+				"LIST": "List"
+			}
+		},
+		"TABLE": {
+			"NAME": "Name",
+			"CODE": "Article",
+			"BARCODE": "Barcode",
+			"SUB_CATEGORY": "Subcategory",
+			"PRICE": "Price",
+			"IN_STOCK": "In stock",
+			"VISIBILITY": {
+				"LABEL": "Visibility",
+				"VISIBLE": "Visible",
+				"HIDDEN": "Hidden"
+			}
+		},
+		"DIALOGS": {
+			"DETAILS": {
+				"HEADER": "Product details",
+				"INFORMATION": {
+					"LABEL": "Information",
+					"NAME": "Name",
+					"DESCRIPTION": "Description",
+					"BARCODE": "Barcode",
+					"PRODUCT_CODE": "Product code",
+					"PRICE": "Price",
+					"STOCK": "Available in stock",
+					"SUB_CATEGORY": "Subcategory",
+					"CREATED_DATE": "Created date"
+				},
+				"BARCODE": {
+					"LABEL": "Barcode",
+					"PRINT_BUTTON": "Print"
+				},
+				"CHARACTERISTICS": {
+					"LABEL": "Characteristics",
+					"EXTRA_DESCRIPTION": "Extra description",
+					"MEASURE_UNIT": "Measure unit",
+					"SIZE": "Size",
+					"COLOR": "Color",
+					"MANUFACTURER": "Manufacturer",
+					"ITEMS_PACKAGE": "Items in package",
+					"ONECNAME": "Field name in 1C",
+					"LABELS": "Labels"
+				}
+			},
+			"CREATE": {
+				"HEADER": "Create new product",
+				"INFORMATION": {
+					"LABEL": "Information",
+					"NAME": {
+						"LABEL": "Name",
+						"PLACEHOLDER": "Enter a name"
+					},
+					"DESCRIPTION": {
+						"LABEL": "Description",
+						"PLACEHOLDER": "Enter a description"
+					},
+					"BARCODE": {
+						"LABEL": "Barcode",
+						"PLACEHOLDER": "Enter a barcode"
+					},
+					"PRODUCT_CODE": {
+						"LABEL": "Product code",
+						"PLACEHOLDER": "Enter a product code"
+					},
+					"PRICE": {
+						"LABEL": "Price",
+						"PLACEHOLDER": "Enter a price"
+					},
+					"STOCK": {
+						"LABEL": "Stock",
+						"PLACEHOLDER": "Enter available in stock amount"
+					},
+					"SUB_CATEGORY": {
+						"LABEL": "Subcategory",
+						"PLACEHOLDER": "Enter a subcategory"
+					},
+					"CATEGORY": {
+						"LABEL": "Category",
+						"PLACEHOLDER": "Enter a category"
+					},
+					"IMAGE": {
+						"LABEL": "Display image",
+						"PLACEHOLDER": "Fill display image"
+					}
+				},
+				"CHARACTERISTICS": {
+					"LABEL": "Characteristics",
+					"EXTRA_DESCRIPTION": {
+						"LABEL": "Extra description",
+						"PLACEHOLDER": "Enter an extra description"
+					},
+					"MEASURE_UNIT": {
+						"LABEL": "Measure unit",
+						"PLACEHOLDER": "Enter a measure unit"
+					},
+					"SIZE": {
+						"LABEL": "Size",
+						"PLACEHOLDER": "Enter a size"
+					},
+					"COLOR": {
+						"LABEL": "Color",
+						"PLACEHOLDER": "Enter a color"
+					},
+					"MANUFACTURER": {
+						"LABEL": "Manufacturer",
+						"PLACEHOLDER": "Enter a manufacturer"
+					},
+					"ITEMS_PACKAGE": {
+						"LABEL": "Items in package",
+						"PLACEHOLDER": "Enter amount of items in one package"
+					},
+					"ONECNAME": {
+						"LABEL": "Field name in 1C",
+						"PLACEHOLDER": "Enter a field name in 1C"
+					},
+					"LABELS": {
+						"LABEL": "Labels",
+						"PLACEHOLDER": "Enter labels separated by comma ','"
+					}
+				},
+				"CREATE_BUTTON": "Save product",
+				"GENERATE_BUTTON": "Generate"
+			},
+			"UPDATE": {
+				"HEADER": "Update a product",
+				"INFORMATION": {
+					"LABEL": "Information",
+					"NAME": {
+						"LABEL": "Name",
+						"PLACEHOLDER": "Enter a name"
+					},
+					"DESCRIPTION": {
+						"LABEL": "Description",
+						"PLACEHOLDER": "Enter a description"
+					},
+					"BARCODE": {
+						"LABEL": "Barcode",
+						"PLACEHOLDER": "Enter a barcode"
+					},
+					"PRODUCT_CODE": {
+						"LABEL": "Product code",
+						"PLACEHOLDER": "Enter a product code"
+					},
+					"PRICE": {
+						"LABEL": "Price",
+						"PLACEHOLDER": "Enter a price"
+					},
+					"STOCK": {
+						"LABEL": "Stock",
+						"PLACEHOLDER": "Enter available in stock amount"
+					},
+					"SUB_CATEGORY": {
+						"LABEL": "Subcategory",
+						"PLACEHOLDER": "Enter a subcategory"
+					},
+					"IMAGE": {
+						"LABEL": "Display image",
+						"PLACEHOLDER": "Fill display image"
+					}
+				},
+				"CHARACTERISTICS": {
+					"LABEL": "Characteristics",
+					"EXTRA_DESCRIPTION": {
+						"LABEL": "Extra description",
+						"PLACEHOLDER": "Enter an extra description"
+					},
+					"MEASURE_UNIT": {
+						"LABEL": "Measure unit",
+						"PLACEHOLDER": "Enter a measure unit"
+					},
+					"SIZE": {
+						"LABEL": "Size",
+						"PLACEHOLDER": "Enter a size"
+					},
+					"COLOR": {
+						"LABEL": "Color",
+						"PLACEHOLDER": "Enter a color"
+					},
+					"MANUFACTURER": {
+						"LABEL": "Manufacturer",
+						"PLACEHOLDER": "Enter a manufacturer"
+					},
+					"ITEMS_PACKAGE": {
+						"LABEL": "Items in package",
+						"PLACEHOLDER": "Enter amount of items in one package"
+					},
+					"ONECNAME": {
+						"LABEL": "Field name in 1C",
+						"PLACEHOLDER": "Enter a field name in 1C"
+					},
+					"LABELS": {
+						"LABEL": "Labels",
+						"PLACEHOLDER": "Enter labels separated by comma ','"
+					},
+					"VISIBILITY": {
+						"LABEL": "Product visibility status",
+						"PLACEHOLDER": "Select visibility status",
+						"VISIBLE": "Visible",
+						"HIDDEN": "Hidden"
+					}
+				},
+				"UPDATE_BUTTON": "Save product"
+			}
+		}
+	},
+	"COMPANY_USERS": {
+		"PAGE": "Employees",
+		"TITLE": "Employees Management",
+		"EXPORT": "Export",
+		"CREATE": "Add",
+		"FILTER": {
+			"TERM": "Search",
+			"SORT": {
+				"DATE_ASC": "Created date ↗",
+				"DATE_DESC": "Created date ↘"
+			},
+			"VIEW": {
+				"TABLE": "Table",
+				"LIST": "List"
+			}
+		},
+		"TABLE": {
+			"NAME": "Name",
+			"PHONE": "Phone"
+		},
+		"DIALOGS": {
+			"CREATE": {
+				"HEADER": "Add new company member",
+				"NAME": {
+					"LABEL": "Full name",
+					"PLACEHOLDER": "Enter a full name"
+				},
+				"PHONE": {
+					"LABEL": "Phone number",
+					"PLACEHOLDER": "Enter a phone number"
+				},
+				"PASSWORD": {
+					"LABEL": "Password",
+					"PLACEHOLDER": "Enter a password"
+				},
+				"CREATE_BUTTON": "Save member"
+			},
+			"DETAILS": {
+				"HEADER": "Company member details",
+				"NAME": "Name",
+				"PHONE": "Phone number",
+				"ADDRESS": "Address",
+				"CREATED_DATE": "Created date"
+			}
+		}
+	},
+	"USERS": {
+		"PAGE": "Users",
+		"TITLE": "Users Management",
+		"EXPORT": "Export",
+		"CREATE": "Add",
+		"FILTER": {
+			"TERM": "Search",
+			"SORT": {
+				"DATE_ASC": "Created date ↗",
+				"DATE_DESC": "Created date ↘"
+			},
+			"VIEW": {
+				"TABLE": "Table",
+				"LIST": "List"
+			}
+		},
+		"TABLE": {
+			"NAME": "Name",
+			"PHONE": "Phone",
+			"ROLE": "Role",
+			"CREATED_AT": "Created date"
+		},
+		"DIALOGS": {
+			"CREATE": {
+				"HEADER": "Add new user",
+				"PERSONAL": {
+					"LABEL": "Personal information",
+					"FIRST_NAME": {
+						"LABEL": "First name",
+						"PLACEHOLDER": "Enter a first name"
+					},
+					"LAST_NAME": {
+						"LABEL": "Last name",
+						"PLACEHOLDER": "Enter a last name"
+					},
+					"PHONE": {
+						"LABEL": "Phone number",
+						"PLACEHOLDER": "Enter a phone number"
+					},
+					"PASSWORD": {
+						"LABEL": "Password",
+						"PLACEHOLDER": "Enter a password"
+					}
+				},
+				"COMPANY": {
+					"LABEL": "Company details",
+					"NAME": {
+						"LABEL": "Company name",
+						"PLACEHOLDER": "Enter a company name"
+					},
+					"DESCRIPTION": {
+						"LABEL": "Company description",
+						"PLACEHOLDER": "Enter a company description"
+					},
+					"PHONE": {
+						"LABEL": "Company phone number",
+						"PLACEHOLDER": "Enter a company phone number"
+					},
+					"ADDRESS": {
+						"LABEL": "Company address",
+						"PLACEHOLDER": "Enter a company address"
+					},
+					"CITY": {
+						"LABEL": "Company location city",
+						"PLACEHOLDER": "Enter a company location city"
+					},
+					"TYPE": {
+						"LABEL": "Type",
+						"PLACEHOLDER": "Select a type",
+						"CLINIC": "Clinic",
+						"STORE": "Store"
+					}
+				},
+				"CREATE_BUTTON": "Save member"
+			},
+			"DETAILS": {
+				"HEADER": "User details",
+				"NAME": "Name",
+				"PHONE": "Phone number",
+				"ADDRESS": "Address",
+				"ROLES": "System role",
+				"CREATED_DATE": "Created date"
+			}
+		}
+	},
+	"PAGINATION": {
+		"NEXT": "Next",
+		"PREVIOUS": "Previous"
+	},
+	"AUTH": {
+		"LOGIN": {
+			"LABEL": "Log in",
+			"HEADER": "Welcome back!",
+			"SUBTITLE": "Login into DentX account",
+			"PHONE": {
+				"LABEL": "Phone number",
+				"PLACEHOLDER": "Enter a phone number"
+			},
+			"PASSWORD": {
+				"LABEL": "Password",
+				"PLACEHOLDER": "Enter a password"
+			},
+			"LOGIN_BUTTON": "Submit",
+			"ALTERNATIVES": "Don't have an account?"
+		},
+		"SIGNUP": {
+			"LABEL": "Sign up",
+			"HEADER": "Registration",
+			"SUBTITLE": "Create your DentX account",
+			"PERSONAL": {
+				"LABEL": "Personal information",
+				"FIRST_NAME": {
+					"LABEL": "First name",
+					"PLACEHOLDER": "Enter a first name"
+				},
+				"LAST_NAME": {
+					"LABEL": "Last name",
+					"PLACEHOLDER": "Enter a last name"
+				},
+				"PHONE": {
+					"LABEL": "Phone number",
+					"PLACEHOLDER": "Enter a phone number"
+				},
+				"PASSWORD": {
+					"LABEL": "Password",
+					"PLACEHOLDER": "Enter a password"
+				}
+			},
+			"COMPANY": {
+				"LABEL": "Company details",
+				"NAME": {
+					"LABEL": "Company name",
+					"PLACEHOLDER": "Enter a company name"
+				},
+				"IINBIN": {
+					"LABEL": "ЖСН/БСН",
+					"PLACEHOLDER": "Введите ЖСН/БСН магазина"
+				},
+				"DESCRIPTION": {
+					"LABEL": "Company description",
+					"PLACEHOLDER": "Enter a company description"
+				},
+				"PHONE": {
+					"LABEL": "Company phone number",
+					"PLACEHOLDER": "Enter a company phone number"
+				},
+				"ADDRESS": {
+					"LABEL": "Company address",
+					"PLACEHOLDER": "Enter a company address"
+				},
+				"CITY": {
+					"LABEL": "Company location city",
+					"PLACEHOLDER": "Enter a company location city"
+				},
+				"TYPE": {
+					"LABEL": "Type",
+					"PLACEHOLDER": "Select a type",
+					"CLINIC": "Clinic",
+					"STORE": "Store"
+				}
+			},
+			"SIGNUP_BUTTON": "Submit",
+			"ALTERNATIVES": "Already have an account?"
+		},
+		"LOGOUT": {
+			"LABEL": "Log out"
+		}
+	},
+	"ADMIN_SETTINGS": {
+		"PAGE": "Settings"
+	},
+	"MONITORING": {
+		"PAGE": "Monitoring",
+		"PLATFORM_METRICS": {
+			"LABEL": "Platform metrics",
+			"CUSTOMERS": "Customers",
+			"STORES": "Stores",
+			"PRODUCTS": "Products",
+			"COMPLETED_ORDERS": "Completed orders",
+			"MONTHLY_ACTIVE_USERS": "Active users this month",
+			"REGISTERED_USERS_THIS_MONTH": "New registrations this month",
+			"REGISTERED_USERS_GRAPH": {
+				"LABEL": "User registrations",
+				"DESCRIPTION": "Shows the number of users registered each month"
+			},
+			"CREATED_AND_COMPLETED_ORDERS": {
+				"LABEL": "Order overview",
+				"DESCRIPTION": "Shows monthly totals for created and completed orders",
+				"CREATED": "Created",
+				"COMPLETED": "Completed"
+			}
+		},
+		"STORES_METRICS": {
+			"LABEL": "Store analytics",
+			"STORES": "Select a store",
+			"EMPTY": "Store is not selected",
+			"STATISTICS": {
+				"TOTAL_SALES_THIS_MONTH": "Total sales for this month",
+				"AVG_SALES_THIS_MONTH": "Average daily sales for this month",
+				"TOTAL_ORDERS_THIS_MONTH": "Total orders for this month",
+				"LAST_MONTH": "Compared to last month",
+				"TOTAL_SALES": "Total sales",
+				"TOTAL_ORDERS": "Total orders",
+				"ACTIVE_ORDERS": "Active orders",
+				"COMPLETED_ORDERS": "Completed orders",
+				"PRODUCTS": "Products",
+				"EMPLOYEES": "Employees"
+			},
+			"REVENUE_GRAPH": {
+				"LABEL": "Revenue by period",
+				"DESCRIPTION": "Shows revenue from orders over selected periods",
+				"PERIODS": {
+					"PLACEHOLDER": "Select period",
+					"ONE_DAY": "1 Day",
+					"FIVE_DAYS": "5 Days",
+					"ONE_MONTH": "1 Month",
+					"SIX_MONTHS": "6 Months",
+					"MAX": "Max"
+				}
+			}
+		}
+	}
+}

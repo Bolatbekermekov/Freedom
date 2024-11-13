@@ -1,0 +1,159 @@
+<html lang='ru'>
+	<head>
+		<meta charset='UTF-8' />
+		<meta name='viewport' content='width=device-width, initial-scale=1.0, max-scale=1.0' />
+		<title>Счет на оплату #{{order.id}} от {{order.date}}</title>
+		<style type='text/css'>
+			@import
+			url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+			*, *::before, *::after { box-sizing: border-box; } * { margin: 0; padding: 0; } body {
+			background: #fff; width: 100vw; height: 100vh; overflow-x: hidden; font-family: 'Rubik',
+			sans-serif; font-size: 12px; color: #262525; margin: 0; padding: 0; } .container { max-width:
+			1240px; margin: 0 auto; page-break-inside: avoid; } .header { display: flex; justify-content:
+			space-between; align-items: center; gap: 30px; border-bottom: 1px solid #e5e7eb;
+			padding-bottom: 20px; } .header__logo { font-weight: 600; font-size: 26px; color: #4318ff; }
+			.header__details { font-weight: 600; font-size: 14px; } .details { display: flex;
+			flex-direction: column; gap: 16px; margin-top: 30px; } .details__item-label { font-weight:
+			500; font-size: 14px; margin-bottom: 6px; } .details__item-list { display: flex;
+			flex-direction: column; gap: 6px; color: #535353; padding-left: 16px; line-height: 22px; }
+			.details__item-description { color: #535353; line-height: 22px; } .products { margin-top:
+			26px; } .products__title { font-size: 14px; font-weight: 500; margin-bottom: 20px; } table {
+			width: 100%; border-collapse: collapse; table-layout: auto; font-size: 12px !important; }
+			table, th, td { border: 1px solid #e5e7eb; background: #fff; } th { color: #353535;
+			font-weight: 500; padding: 14px 18px; text-align: left; white-space: nowrap; } td { color:
+			#535353; padding: 14px 18px; text-align: left; white-space: nowrap; } td.name-cell,
+			td.code-cell { white-space: normal; } .table__total td { font-weight: 600; background-color:
+			#f9fafb; } .company-names { font-weight: 500; } .bank-table td { white-space: normal; }
+		</style>
+	</head>
+	<body>
+		<div class='container'>
+			<header class='header'>
+				<p class='header__logo'>DentX</p>
+				<p class='header__details'>
+					Счет на оплату #{{order.id}}
+					от
+					{{order.date}}
+				</p>
+			</header>
+
+			<section class='details'>
+				<div class='details__item'>
+					<p class='details__item-label'>Поставщик</p>
+					<p class='details__item-description'>
+						<span class='company-names'>{{store.name}}</span>,
+						{{store.phone}},
+						{{store.address}}
+					</p>
+				</div>
+
+				<div class='details__item'>
+					<p class='details__item-label'>Покупатель</p>
+					<p class='details__item-description'>
+						<span class='company-names'>{{buyer.name}}</span>,
+						{{buyer.phone}},
+						{{buyer.address}}
+					</p>
+				</div>
+			</section>
+
+			<section class='products'>
+				<p class='products__title'>Платежное поручение</p>
+
+				<table class='bank-table'>
+					<thead>
+						<tr>
+							<th>Банк</th>
+							<th>ИИК</th>
+							<th>КБЕ</th>
+							<th>БИК</th>
+							<th>Код назначения платежа</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>{{bank.name}}</td>
+							<td>{{bank.iik}}</td>
+							<td>{{bank.kbe}}</td>
+							<td>{{bank.bik}}</td>
+							<td>{{bank.payment_code}}</td>
+						</tr>
+					</tbody>
+				</table>
+			</section>
+
+			<section class='products'>
+				<p class='products__title'>Товары</p>
+
+				<table>
+					<thead>
+						<tr>
+							<th>#</th>
+							<th>Код</th>
+							<th>Наименование</th>
+							<th>Кол-во</th>
+							<th>Ед.</th>
+							<th>Цена</th>
+							<th>Сумма</th>
+						</tr>
+					</thead>
+					<tbody>
+						{{#each goods}}
+							<tr>
+								<td>{{indexPlusOne @index}}</td>
+								<td class='code-cell'>{{this.code}}</td>
+								<td class='name-cell'>{{this.name}}</td>
+								<td>{{this.quantity}}</td>
+								<td>{{this.unit}}</td>
+								<td>{{this.price}}</td>
+								<td>{{this.total}}</td>
+							</tr>
+						{{/each}}
+						<tr>
+							<td colspan='6'>Сумма товаров</td>
+							<td>{{itemsPrice}}</td>
+						</tr>
+
+						{{#if shippingCharges}}
+							<tr>
+								<td colspan='6'>Доставка</td>
+								<td>{{shippingCharges}}</td>
+							</tr>
+						{{/if}}
+
+						{{#if discount.percentage}}
+							<tr>
+								<td colspan='6'>Скидка ({{discount.percentage}}%)</td>
+								<td>{{discount.price}}</td>
+							</tr>
+						{{/if}}
+
+						<tr class='table__total'>
+							<td colspan='6'>Итого</td>
+							<td>{{totals}}</td>
+						</tr>
+					</tbody>
+				</table>
+			</section>
+
+			<section class='details'>
+				<div class='align-left details__item'>
+					<p class='details__item-label'>Важное замечание</p>
+					<ul class='details__item-list'>
+						<li>
+							Оплата данного счета означает согласие с условиями поставки товара.
+						</li>
+						<li>
+							Уведомление об оплате обязательно, в противном случае не гарантируется наличие товара
+							на складе.
+						</li>
+						<li>
+							Товар отпускается по факту прихода денег на р/с Поставщика, самовывозом, при наличии
+							доверенности и документов, удостоверяющих личность.
+						</li>
+					</ul>
+				</div>
+			</section>
+		</div>
+	</body>
+</html>

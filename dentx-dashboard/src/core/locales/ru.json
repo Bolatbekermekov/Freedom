@@ -1,0 +1,968 @@
+{
+	"FILTERS": {
+		"LABEL": "Фильтр",
+		"VIEW": "Отображение",
+		"SORT": "Сортировать",
+		"STATUS": "Статус",
+		"RESET": "Сбросить",
+		"APPLY": "Применить",
+		"DATE_PICKER": "Выбери дату",
+		"PROMOTION_TYPE": "Промоакций"
+	},
+	"HOME": {
+		"TITLE": "Добро пожаловать!",
+		"SUB_TITLE": "Войдите в админ панель DentX"
+	},
+	"DASHBOARD": {
+		"PAGE": "Аналитика",
+		"TOTALS": {
+			"SALES": "Продажи",
+			"PRODUCTS": "Продукты",
+			"ORDERS": "Заказы",
+			"ACTIVE_ORDERS": "Активные заказы",
+			"COMPLETED_ORDERS": "Завершенные заказы",
+			"MEMBERS": "Сотрудникии компании"
+		},
+		"SALES_BY_PERIOD": {
+			"LABEL": "Продажи",
+			"SUBTITLE": "График продаж по периодам",
+			"PERIODS": {
+				"PLACEHOLDER": "Выберите период",
+				"ONE_DAY": "1 день",
+				"FIVE_DAYS": "5 дней",
+				"ONE_MONTH": "1 месяц",
+				"SIX_MONTHS": "6 месяцев",
+				"MAX": "Макс"
+			}
+		},
+		"STATUSES_BY_MONTH": {
+			"LABEL": "Статусы заказов",
+			"SUBTITLE": "Столбчатая диаграмма заказов по статусам"
+		},
+		"ASSIGNEES_BY_ORDERS": {
+			"LABEL": "Назначенные заказы",
+			"SUBTITLE": "Столбчатая диаграмма заказов по назначенным участникам"
+		},
+		"SUPERADMIN": {
+			"LABEL": "Аналитика администратора",
+			"TOTALS": {
+				"USERS": "Пользователи",
+				"CLINICS": "Клиники",
+				"STORES": "Продавцы"
+			}
+		},
+		"PERIODS": {
+			"LABEL": "Периоды",
+			"DAILY": "Ежедневно",
+			"WEEKLY": "Еженедельно",
+			"MONTHLY": "Ежемесячно",
+			"QUARTERLY": "Ежеквартально",
+			"YEARLY": "Ежегодно"
+		}
+	},
+	"ORDERS": {
+		"PAGE": "Заказы",
+		"TITLE": "Управление Заказами",
+		"EXPORT": "Экспорт",
+		"CREATE": "Создать",
+		"FILTER": {
+			"TERM": "Поиск",
+			"SORT": {
+				"DATE_ASC": "По дате ↗",
+				"DATE_DESC": "По дате ↘"
+			},
+			"STATUSES": {
+				"ALL": "Все",
+				"ACTIVE": "Активные",
+				"CREATED": "Создано",
+				"REVIEW_REJECTED_BY_USER": "Счет на оплату отклонен",
+				"UPDATED_BY_ADMIN": "Обновлено менеджером магазина",
+				"CANCELLED": "Отменено",
+				"PREPARING": "Подготовка",
+				"SHIPPED": "Отправлено",
+				"DELIVERED": "Доставлено",
+				"NEXT_DAY_SHIPPING": "Доставка на следующий день"
+			},
+			"VIEW": {
+				"TABLE": "Таблица",
+				"LIST": "Список"
+			}
+		},
+		"TABLE": {
+			"PRODUCTS": "Товары",
+			"DATE": "Дата Создания",
+			"QUANTITY": "Кол-во",
+			"BARCODE": "Штрихкод",
+			"TOTAL": "Сумма",
+			"STATUS": "Статус",
+			"ASSIGNEE": "Ответственный"
+		},
+		"DIALOGS": {
+			"CREATE": {
+				"HEADER": "Создание нового заказа",
+				"PRODUCTS": {
+					"LABEL": "Товары",
+					"TABLE": {
+						"NAME": "Имя",
+						"QUANTITY": "Количество",
+						"PRICE": "Цена",
+						"TOTAL": "Всего"
+					},
+					"SELECT_PRODUCT": "Выберите товар"
+				},
+				"SHIPPING": {
+					"LABEL": "Доставка",
+					"PAYMENT": {
+						"LABEL": "Оплата",
+						"PLACEHOLDER": "Выберите метод оплаты",
+						"COD": "При доставки",
+						"ONLINE": "Онлайн"
+					},
+					"SHIPPING_CHARGES": {
+						"LABEL": "Тип доставки",
+						"PLACEHOLDER": "Выберите тип доставки",
+						"FREE": "Бесплатная доставка",
+						"PAID": "Оплата курьеру"
+					},
+					"CUSTOMER_NAME": {
+						"LABEL": "Имя клиента",
+						"PLACEHOLDER": "Введите имя клиента"
+					},
+					"CUSTOMER_PHONE": {
+						"LABEL": "Контактный телефон клиента",
+						"PLACEHOLDER": "Ввести телефон клиента"
+					},
+					"ADDRESS": {
+						"LABEL": "Адрес",
+						"PLACEHOLDER": "Введите полный адрес доставки"
+					},
+					"COUNTRY": {
+						"LABEL": "Страна",
+						"PLACEHOLDER": "Введите название страны доставки"
+					},
+					"CITY": {
+						"LABEL": "Город",
+						"PLACEHOLDER": "Введите название города доставки"
+					}
+				},
+				"CREATE_BUTTON": "Создать заказ"
+			},
+			"ASSIGN": {
+				"HEADER": "Назначение сотрудника на заказ",
+				"USER": {
+					"LABEL": "Сотрудник компании",
+					"PLACEHOLDER": "Выберите сотрудника компании"
+				},
+				"ASSIGN_BUTTON": "Назначить"
+			},
+			"UPDATE": {
+				"HEADER": "Обновить заказ",
+				"UPDATE_BUTTON": "Обновить"
+			}
+		}
+	},
+
+	"PROMOTIONS": {
+		"PAGE": "Промоакции",
+		"TITLE": "Управление промоакциями",
+		"EXPORT": "Экспорт",
+		"CREATE": "Создать",
+		"FILTER": {
+			"TERM": "Поиск",
+
+			"SORT": {
+				"DATE_ASC": "По дате создания ↗",
+				"DATE_DESC": "По дате создания ↘"
+			},
+			"VIEW": {
+				"TABLE": "Таблица",
+				"LIST": "Список"
+			},
+			"PROMOTIONS": {
+				"ALL": "Все",
+				"AUTOMATIC": "Скидка по Доставке",
+				"CODE": "Скидка по Промокоду"
+			}
+		},
+		"TABLE": {
+			"DESCRIPTION": "Описание",
+			"DISCOUNT_PERCENTAGE": "Процент скидки",
+			"DISCOUNT": "Скидка",
+			"START_DATE": "Дата начала",
+			"END_DATE": "Дата окончания",
+			"PROMO_CODE": "Промокод",
+			"PROMOTION_TYPE": "Тип промоакции",
+			"MAX_USAGE": "Максимальное использование",
+			"MINIMUM_ORDER_VALUE": "Минимальная сумма заказа",
+			"STATUS": "Статус",
+			"APPLICABLE_CITIES": "Применимые города"
+		},
+		"STATUS": {
+			"ACTIVE": "Активный",
+			"INACTIVE": "Неактивный"
+		},
+		"PROMOTION_TYPE_LABELS": {
+			"CODE": "Скидка по Промокоду",
+			"AUTOMATIC": "Скидка по Доставке"
+		},
+		"DIALOGS": {
+			"CREATE": {
+				"HEADER": "Создание промоакции",
+				"DESCRIPTION": {
+					"LABEL": "Описание",
+					"PLACEHOLDER": "Введите описание"
+				},
+				"DISCOUNT_PERCENTAGE": {
+					"LABEL": "Процент скидки",
+					"PLACEHOLDER": "Введите процент скидки"
+				},
+				"START_DATE": {
+					"LABEL": "Дата начала"
+				},
+				"END_DATE": {
+					"LABEL": "Дата окончания"
+				},
+				"MAX_USAGE": {
+					"LABEL": "Максимальное использование",
+					"PLACEHOLDER": "Введите максимальное использование"
+				},
+				"PROMO_CODE": {
+					"LABEL": "Промокод",
+					"PLACEHOLDER": "Введите промокод"
+				},
+				"PROMOTION_TYPE": {
+					"LABEL": "Тип промоакции",
+					"TYPE_CODE": "Скидка по Промокоду",
+					"TYPE_AUTOMATIC": "Скидка по Доставке"
+				},
+				"MINIMUM_ORDER_VALUE": {
+					"LABEL": "Минимальная сумма заказа",
+					"PLACEHOLDER": "Введите минимальную сумму заказа"
+				},
+				"APPLICABLE_CITIES": {
+					"LABEL": "Применимые города",
+					"PLACEHOLDER": "Введите применимые города"
+				},
+				"CREATE_BUTTON": "Создать"
+			},
+			"UPDATE": {
+				"HEADER": "Обновление промоакции",
+				"DESCRIPTION": {
+					"LABEL": "Описание",
+					"PLACEHOLDER": "Введите описание",
+					"UPDATE_BUTTON": "Сохранить"
+				},
+				"DISCOUNT_PERCENTAGE": {
+					"LABEL": "Процент скидки",
+					"PLACEHOLDER": "Введите процент скидки"
+				},
+				"START_DATE": {
+					"LABEL": "Дата начала"
+				},
+				"END_DATE": {
+					"LABEL": "Дата окончания"
+				},
+				"IS_ACTIVE": {
+					"LABEL": "Статус"
+				},
+				"MAX_USAGE": {
+					"LABEL": "Максимальное использование",
+					"PLACEHOLDER": "Введите максимальное использование"
+				},
+				"PROMO_CODE": {
+					"LABEL": "Промокод",
+					"PLACEHOLDER": "Введите промокод"
+				},
+				"PROMOTION_TYPE": {
+					"LABEL": "Тип промоакции",
+					"TYPE_CODE": "Код",
+					"TYPE_AUTOMATIC": "Автоматически"
+				},
+				"MINIMUM_ORDER_VALUE": {
+					"LABEL": "Минимальная сумма заказа",
+					"PLACEHOLDER": "Введите минимальную сумму заказа"
+				},
+				"APPLICABLE_CITIES": {
+					"LABEL": "Применимые города",
+					"PLACEHOLDER": "Выберите применимые города"
+				},
+				"SAVE_BUTTON": "Сохранить"
+			},
+			"DETAILS": {
+				"HEADER": "Детали промоакции",
+				"INFORMATION": {
+					"LABEL": "Информация",
+					"DESCRIPTION": "Описание",
+					"PROMO_CODE": "Промокод",
+					"DISCOUNT_PERCENTAGE": "Процент скидки",
+					"START_DATE": "Дата начала",
+					"END_DATE": "Дата окончания",
+					"PROMOTION_TYPE": "Тип промоакции",
+					"MINIMUM_ORDER_VALUE": "Мин. сумма заказа",
+					"MAX_USAGE": "Макс. использование",
+					"STATUS": "Статус",
+					"APPLICABLE_CITIES": "Применимые города",
+					"ACTIVE": "Активный",
+					"INACTIVE": "Неактивный"
+				},
+				"CHARACTERISTICS": {
+					"LABEL": "Характеристики"
+				}
+			}
+		}
+	},
+	"ORDER_TRACK": {
+		"HEADER": "Отследить заказ",
+		"ORDER_STATUSES": {
+			"LABEL": "Статус заказа",
+			"CREATED": "Создано",
+			"REVIEW_REJECTED_BY_USER": "Счет на оплату отклонен",
+			"UPDATED_BY_ADMIN": "Обновлено менеджером магазина",
+			"CANCELLED": "Отменено",
+			"PREPARING": "Подготовка",
+			"SHIPPED": "Отправлено",
+			"DELIVERED": "Доставлено",
+			"NEXT_DAY_SHIPPING": "Доставка на следующий день"
+		},
+		"PAYMENT_STATUS": {
+			"LABEL": "Статус оплаты",
+			"PAID": "Оплачено",
+			"UNPAID": "Не оплачено"
+		},
+		"PAYMENT_METHODS": {
+			"COD": "При доставке",
+			"ONLINE": "Онлайн"
+		},
+		"ORDER_DETAILS": {
+			"LABEL": "Товары в заказе",
+			"TABLE": {
+				"NAME": "Название",
+				"BARCODE": "Штрихкод",
+				"QUANTITY": "Кол-во",
+				"PRICE": "Цена",
+				"TOTAL": "Итого"
+			}
+		},
+		"PAYMENT_DETAILS": {
+			"LABEL": "Детали оплаты",
+			"TABLE": {
+				"SUBTOTAL": "Сумма товаров",
+				"SHIPPING": "Доставка",
+				"DISCOUNT": "Скидка",
+				"TOTAL": "Итого",
+				"PAID_SHIPPING":"Оплата курьеру",
+				"FREE_SHIPPING":"Бесплатная доставка"
+			}
+		},
+		"CUSTOMER_DETAILS": {
+			"LABEL": "Информация о клиенте",
+			"TABLE": {
+				"NAME": "Имя",
+				"PHONE": "Телефон",
+				"ADDRESS": "Адрес доставки",
+				"PAYMENT_METHOD": "Способ оплаты"
+			}
+		},
+		"RECEIPT": {
+			"LABEL": "Счет на оплату",
+			"STATUS": "Статус проверки покупателя",
+			"COMMENT": "Комментарий покупателя",
+			"DOCUMENT": "Просмотреть счет",
+			"DOWNLOAD": "Скачать",
+			"LOADING": "Загрузка",
+			"APPROVED": "Подтвержден",
+			"REJECTED": "Отклонен",
+			"UNREVIEWED": "Не проверен покупателем",
+			"EMPTY_COMMENT": "Комментарий отсутвует"
+		}
+	},
+	"CATEGORIES": {
+		"PAGE": "Категории",
+		"TITLE": "Управление Категориями",
+		"EXPORT": "Экспорт",
+		"CREATE": "Создать",
+		"FILTER": {
+			"TERM": "Поиск",
+			"SORT": {
+				"DATE_ASC": "По дате создания ↗",
+				"DATE_DESC": "По дате создания ↘"
+			},
+			"VIEW": {
+				"TABLE": "Таблица",
+				"LIST": "Список"
+			}
+		},
+		"TABLE": {
+			"NAME": "Имя"
+		},
+		"DIALOGS": {
+			"CREATE": {
+				"HEADER": "Создать категорию",
+				"NAME": {
+					"LABEL": "Название",
+					"PLACEHOLDER": "Введите название"
+				},
+				"IMAGE": {
+					"LABEL": "Изображение",
+					"PLACEHOLDER": "Загрузите изображение категории"
+				},
+				"CREATE_BUTTON": "Создать"
+			},
+			"UPDATE": {
+				"HEADER": "Обновить категорию",
+				"NAME": {
+					"LABEL": "Название",
+					"PLACEHOLDER": "Введите название"
+				},
+				"SAVE_BUTTON": "Сохранить"
+			},
+			"DETAILS": {
+				"HEADER": "Детали категории",
+				"NAME": "Название"
+			}
+		}
+	},
+	"SUB_CATEGORIES": {
+		"PAGE": "Подкатегории",
+		"TITLE": "Управление Подкатегориями",
+		"EXPORT": "Экспорт",
+		"CREATE": "Создать",
+		"FILTER": {
+			"TERM": "Поиск",
+			"SORT": {
+				"DATE_ASC": "По дате создания ↗",
+				"DATE_DESC": "По дате создания ↘"
+			},
+			"VIEW": {
+				"TABLE": "Таблица",
+				"LIST": "Список"
+			}
+		},
+		"TABLE": {
+			"NAME": "Имя"
+		},
+		"DIALOGS": {
+			"CREATE": {
+				"HEADER": "Создать подкатегорию",
+				"NAME": {
+					"LABEL": "Наименование",
+					"PLACEHOLDER": "Введите наименование"
+				},
+				"CATEGORY": {
+					"LABEL": "Родительская категория",
+					"PLACEHOLDER": "Выберите родительскую категорию"
+				},
+				"CREATE_BUTTON": "Создать"
+			},
+			"UPDATE": {
+				"HEADER": "Обновить подкатегорию",
+				"NAME": {
+					"LABEL": "Наименование",
+					"PLACEHOLDER": "Введите наименование"
+				},
+				"CATEGORY": {
+					"LABEL": "Родительская категория",
+					"PLACEHOLDER": "Выберите родительскую категорию"
+				},
+				"SAVE_BUTTON": "Сохранить"
+			},
+			"DETAILS": {
+				"HEADER": "Детали подкатегории",
+				"NAME": "Наименование",
+				"CATEGORY": "Родительская категория"
+			}
+		}
+	},
+	"PRODUCTS": {
+		"PAGE": "Загрузка резюме",
+		"TITLE": "Загрузка и анализ кандидатов",
+		"EXPORT": "Экспорт",
+		"CREATE": "Создать",
+		"FILTER": {
+			"TERM": "Поиск",
+			"SORT": {
+				"DATE_ASC": "По дате создания ↗",
+				"DATE_DESC": "По дате создания ↘"
+			},
+			"SUB_CATEGORY": {
+				"LABEL": "Подкатегория",
+				"NONE": "Не выбран"
+			},
+			"VIEW": {
+				"TABLE": "Таблица",
+				"LIST": "Список"
+			}
+		},
+		"TABLE": {
+			"NAME": "Имя",
+			"CODE": "Артикул",
+			"BARCODE": "Штрихкод",
+			"SUB_CATEGORY": "Подкатегория",
+			"PRICE": "Цена",
+			"IN_STOCK": "В наличии",
+			"VISIBILITY": {
+				"LABEL": "Видимость",
+				"VISIBLE": "Видимый",
+				"HIDDEN": "Скрытый"
+			}
+		},
+		"DIALOGS": {
+			"DETAILS": {
+				"HEADER": "Детали продукта",
+				"INFORMATION": {
+					"LABEL": "Информация",
+					"NAME": "Название",
+					"DESCRIPTION": "Описание",
+					"BARCODE": "Штрих-код",
+					"PRODUCT_CODE": "Код продукта",
+					"PRICE": "Цена",
+					"STOCK": "Доступно на складе",
+					"SUB_CATEGORY": "Подкатегория",
+					"CREATED_DATE": "Дата создания"
+				},
+				"CHARACTERISTICS": {
+					"LABEL": "Характеристики",
+					"EXTRA_DESCRIPTION": "Дополнительное описание",
+					"MEASURE_UNIT": "Единица измерения",
+					"SIZE": "Размер",
+					"COLOR": "Цвет",
+					"MANUFACTURER": "Производитель",
+					"ITEMS_PACKAGE": "Количество единиц в упаковке",
+					"ONECNAME": "Название поля в 1C",
+					"LABELS": "Метки"
+				},
+				"BARCODE": {
+					"LABEL": "Штрих-код",
+					"PRINT_BUTTON": "Печать"
+				}
+			},
+			"CREATE": {
+				"HEADER": "Создать новый продукт",
+				"INFORMATION": {
+					"LABEL": "Информация",
+					"NAME": {
+						"LABEL": "Наименование",
+						"PLACEHOLDER": "Введите наименование"
+					},
+					"DESCRIPTION": {
+						"LABEL": "Описание",
+						"PLACEHOLDER": "Введите описание"
+					},
+					"BARCODE": {
+						"LABEL": "Штрих-код",
+						"PLACEHOLDER": "Введите штрих-код"
+					},
+					"PRODUCT_CODE": {
+						"LABEL": "Код продукта",
+						"PLACEHOLDER": "Введите код продукта"
+					},
+					"PRICE": {
+						"LABEL": "Цена",
+						"PLACEHOLDER": "Введите цену"
+					},
+					"STOCK": {
+						"LABEL": "Наличие на складе",
+						"PLACEHOLDER": "Введите количество в наличии"
+					},
+					"SUB_CATEGORY": {
+						"LABEL": "Подкатегория",
+						"PLACEHOLDER": "Введите подкатегорию"
+					},
+					"CATEGORY": {
+						"LABEL": "Категория",
+						"PLACEHOLDER": "Введите категорию"
+					},
+					"IMAGE": {
+						"LABEL": "Изображение",
+						"PLACEHOLDER": "Выберите изображение"
+					}
+				},
+				"CHARACTERISTICS": {
+					"LABEL": "Характеристики",
+					"EXTRA_DESCRIPTION": {
+						"LABEL": "Дополнительное описание",
+						"PLACEHOLDER": "Введите дополнительное описание"
+					},
+					"MEASURE_UNIT": {
+						"LABEL": "Единица измерения",
+						"PLACEHOLDER": "Введите единицу измерения"
+					},
+					"SIZE": {
+						"LABEL": "Размер",
+						"PLACEHOLDER": "Введите размер"
+					},
+					"COLOR": {
+						"LABEL": "Цвет",
+						"PLACEHOLDER": "Введите цвет"
+					},
+					"MANUFACTURER": {
+						"LABEL": "Производитель",
+						"PLACEHOLDER": "Введите производителя"
+					},
+					"ITEMS_PACKAGE": {
+						"LABEL": "Количество в упаковке",
+						"PLACEHOLDER": "Введите количество товаров в упаковке"
+					},
+					"ONECNAME": {
+						"LABEL": "Наименование поля в 1С",
+						"PLACEHOLDER": "Введите наименование поля в 1С"
+					},
+					"LABELS": {
+						"LABEL": "Метки",
+						"PLACEHOLDER": "Введите метки через запятую ','"
+					}
+				},
+				"CREATE_BUTTON": "Сохранить продукт",
+				"GENERATE_BUTTON": "Генерировать"
+			},
+			"UPDATE": {
+				"HEADER": "Обновить продукт",
+				"INFORMATION": {
+					"LABEL": "Информация",
+					"NAME": {
+						"LABEL": "Наименование",
+						"PLACEHOLDER": "Введите наименование"
+					},
+					"DESCRIPTION": {
+						"LABEL": "Описание",
+						"PLACEHOLDER": "Введите описание"
+					},
+					"BARCODE": {
+						"LABEL": "Штрих-код",
+						"PLACEHOLDER": "Введите штрих-код"
+					},
+					"PRODUCT_CODE": {
+						"LABEL": "Код продукта",
+						"PLACEHOLDER": "Введите код продукта"
+					},
+					"PRICE": {
+						"LABEL": "Цена",
+						"PLACEHOLDER": "Введите цену"
+					},
+					"STOCK": {
+						"LABEL": "Наличие на складе",
+						"PLACEHOLDER": "Введите количество в наличии"
+					},
+					"SUB_CATEGORY": {
+						"LABEL": "Подкатегория",
+						"PLACEHOLDER": "Введите подкатегорию"
+					},
+					"IMAGE": {
+						"LABEL": "Изображение",
+						"PLACEHOLDER": "Выберите изображение"
+					}
+				},
+				"CHARACTERISTICS": {
+					"LABEL": "Характеристики",
+					"EXTRA_DESCRIPTION": {
+						"LABEL": "Дополнительное описание",
+						"PLACEHOLDER": "Введите дополнительное описание"
+					},
+					"MEASURE_UNIT": {
+						"LABEL": "Единица измерения",
+						"PLACEHOLDER": "Введите единицу измерения"
+					},
+					"SIZE": {
+						"LABEL": "Размер",
+						"PLACEHOLDER": "Введите размер"
+					},
+					"COLOR": {
+						"LABEL": "Цвет",
+						"PLACEHOLDER": "Введите цвет"
+					},
+					"MANUFACTURER": {
+						"LABEL": "Производитель",
+						"PLACEHOLDER": "Введите производителя"
+					},
+					"ITEMS_PACKAGE": {
+						"LABEL": "Количество в упаковке",
+						"PLACEHOLDER": "Введите количество товаров в упаковке"
+					},
+					"ONECNAME": {
+						"LABEL": "Наименование поля в 1С",
+						"PLACEHOLDER": "Введите наименование поля в 1С"
+					},
+					"LABELS": {
+						"LABEL": "Метки",
+						"PLACEHOLDER": "Введите метки через запятую ','"
+					},
+					"VISIBILITY": {
+						"LABEL": "Статус видимости продукта",
+						"PLACEHOLDER": "Выберите статус видимости",
+						"VISIBLE": "Видимый",
+						"HIDDEN": "Скрытый"
+					}
+				},
+				"UPDATE_BUTTON": "Сохранить продукт"
+			}
+		}
+	},
+	"COMPANY_USERS": {
+		"PAGE": "Сотрудники",
+		"TITLE": "Управление Сотрудниками",
+		"EXPORT": "Экспорт",
+		"CREATE": "Добавить",
+		"FILTER": {
+			"TERM": "Поиск",
+			"SORT": {
+				"DATE_ASC": "По дате создания ↗",
+				"DATE_DESC": "По дате создания ↘"
+			},
+			"VIEW": {
+				"TABLE": "Таблица",
+				"LIST": "Список"
+			}
+		},
+		"TABLE": {
+			"NAME": "Имя",
+			"PHONE": "Телефон"
+		},
+		"DIALOGS": {
+			"CREATE": {
+				"HEADER": "Добавить нового сотрудника компании",
+				"NAME": {
+					"LABEL": "Полное имя",
+					"PLACEHOLDER": "Введите полное имя"
+				},
+				"PHONE": {
+					"LABEL": "Номер телефона",
+					"PLACEHOLDER": "Введите номер телефона"
+				},
+				"PASSWORD": {
+					"LABEL": "Пароль",
+					"PLACEHOLDER": "Введите пароль"
+				},
+				"CREATE_BUTTON": "Сохранить сотрудника"
+			},
+			"DETAILS": {
+				"HEADER": "Подробная информация о сотруднике компании",
+				"NAME": "Имя",
+				"PHONE": "Номер телефона",
+				"ADDRESS": "Адрес",
+				"CREATED_DATE": "Дата создания"
+			}
+		}
+	},
+	"USERS": {
+		"PAGE": "Пользователи",
+		"TITLE": "Управление пользователями",
+		"EXPORT": "Экспорт",
+		"CREATE": "Добавить",
+		"FILTER": {
+			"TERM": "Поиск",
+			"SORT": {
+				"DATE_ASC": "Дата создания ↗",
+				"DATE_DESC": "Дата создания ↘"
+			},
+			"VIEW": {
+				"TABLE": "Таблица",
+				"LIST": "Список"
+			}
+		},
+		"TABLE": {
+			"NAME": "Имя",
+			"PHONE": "Телефон",
+			"ROLE": "Роль",
+			"CREATED_AT": "Дата создания"
+		},
+		"DIALOGS": {
+			"CREATE": {
+				"HEADER": "Добавить нового пользователя",
+				"PERSONAL": {
+					"LABEL": "Личная информация",
+					"FIRST_NAME": {
+						"LABEL": "Имя",
+						"PLACEHOLDER": "Введите имя"
+					},
+					"LAST_NAME": {
+						"LABEL": "Фамилия",
+						"PLACEHOLDER": "Введите фамилию"
+					},
+					"PHONE": {
+						"LABEL": "Номер телефона",
+						"PLACEHOLDER": "Введите номер телефона"
+					},
+					"PASSWORD": {
+						"LABEL": "Пароль",
+						"PLACEHOLDER": "Введите пароль"
+					}
+				},
+				"COMPANY": {
+					"LABEL": "Сведения о компании",
+					"NAME": {
+						"LABEL": "Название компании",
+						"PLACEHOLDER": "Введите название компании"
+					},
+					"DESCRIPTION": {
+						"LABEL": "Описание компании",
+						"PLACEHOLDER": "Введите описание компании"
+					},
+					"PHONE": {
+						"LABEL": "Номер телефона компании",
+						"PLACEHOLDER": "Введите номер телефона компании"
+					},
+					"ADDRESS": {
+						"LABEL": "Адрес компании",
+						"PLACEHOLDER": "Введите адрес компании"
+					},
+					"CITY": {
+						"LABEL": "Город расположения компании",
+						"PLACEHOLDER": "Введите город расположения компании"
+					},
+					"TYPE": {
+						"LABEL": "Тип",
+						"PLACEHOLDER": "Выберите тип",
+						"CLINIC": "Клиника",
+						"STORE": "Магазин"
+					}
+				},
+				"CREATE_BUTTON": "Сохранить пользователя"
+			},
+			"DETAILS": {
+				"HEADER": "Подробная информация о пользователе",
+				"NAME": "Имя",
+				"PHONE": "Номер телефона",
+				"ADDRESS": "Адрес",
+				"ROLES": "Системная роль",
+				"CREATED_DATE": "Дата создания"
+			}
+		}
+	},
+	"PAGINATION": {
+		"NEXT": "Вперед",
+		"PREVIOUS": "Назад"
+	},
+	"AUTH": {
+		"LOGIN": {
+			"LABEL": "Войти",
+			"HEADER": "Добро пожаловать снова!",
+			"SUBTITLE": "Войдите в Панель управления DentX",
+			"PHONE": {
+				"LABEL": "Номер телефона",
+				"PLACEHOLDER": "Введите номер телефона"
+			},
+			"PASSWORD": {
+				"LABEL": "Пароль",
+				"PLACEHOLDER": "Введите пароль"
+			},
+			"LOGIN_BUTTON": "Отправить",
+			"ALTERNATIVES": "Нет аккаунта?"
+		},
+		"SIGNUP": {
+			"LABEL": "Зарегистрироваться",
+			"HEADER": "Регистрация",
+			"SUBTITLE": "Создайте свою учетную запись DentX",
+			"PERSONAL": {
+				"LABEL": "Личная информация",
+				"FIRST_NAME": {
+					"LABEL": "Имя",
+					"PLACEHOLDER": "Введите имя"
+				},
+				"LAST_NAME": {
+					"LABEL": "Фамилия",
+					"PLACEHOLDER": "Введите фамилию"
+				},
+				"PHONE": {
+					"LABEL": "Номер телефона",
+					"PLACEHOLDER": "Введите номер телефона"
+				},
+				"PASSWORD": {
+					"LABEL": "Пароль",
+					"PLACEHOLDER": "Введите пароль"
+				}
+			},
+			"COMPANY": {
+				"LABEL": "Сведения о магазине",
+				"NAME": {
+					"LABEL": "Название магазина",
+					"PLACEHOLDER": "Введите название магазина"
+				},
+				"IINBIN": {
+					"LABEL": "ИИН/БИН",
+					"PLACEHOLDER": "Введите ИИН/БИН магазина"
+				},
+				"DESCRIPTION": {
+					"LABEL": "Описание компании",
+					"PLACEHOLDER": "Введите описание магазина"
+				},
+				"PHONE": {
+					"LABEL": "Номер телефона магазина",
+					"PLACEHOLDER": "Введите номер телефона магазина"
+				},
+				"ADDRESS": {
+					"LABEL": "Адрес магазина",
+					"PLACEHOLDER": "Введите адрес магазина"
+				},
+				"CITY": {
+					"LABEL": "Город расположения магазина",
+					"PLACEHOLDER": "Введите город расположения магазина"
+				},
+				"TYPE": {
+					"LABEL": "Тип",
+					"PLACEHOLDER": "Выберите тип",
+					"CLINIC": "Клиника",
+					"STORE": "Магазин"
+				}
+			},
+			"SIGNUP_BUTTON": "Отправить",
+			"ALTERNATIVES": "Уже есть аккаунт?"
+		},
+		"LOGOUT": {
+			"LABEL": "Выйти"
+		}
+	},
+	"ADMIN_SETTINGS": {
+		"PAGE": "Настройки"
+	},
+	"MONITORING": {
+		"PAGE": "Мониторинг",
+		"PLATFORM_METRICS": {
+			"LABEL": "Метрики платформы",
+			"CUSTOMERS": "Клиенты",
+			"STORES": "Магазины",
+			"PRODUCTS": "Продукты",
+			"COMPLETED_ORDERS": "Завершенные заказы",
+			"MONTHLY_ACTIVE_USERS": "Активные пользователи в этом месяце",
+			"REGISTERED_USERS_THIS_MONTH": "Новые регистрации в этом месяце",
+			"REGISTERED_USERS_GRAPH": {
+				"LABEL": "Регистрация пользователей",
+				"DESCRIPTION": "Показывает количество зарегистрированных пользователей каждый месяц"
+			},
+			"CREATED_AND_COMPLETED_ORDERS": {
+				"LABEL": "Обзор заказов",
+				"DESCRIPTION": "Показывает месячные итоги по созданным и завершенным заказам",
+				"CREATED": "Созданные",
+				"COMPLETED": "Завершенные"
+			}
+		},
+		"STORES_METRICS": {
+			"LABEL": "Аналитика магазинов",
+			"STORES": "Выберите магазин",
+			"EMPTY": "Магазин не выбран",
+			"STATISTICS": {
+				"TOTAL_SALES_THIS_MONTH": "Продажи за текущий месяц",
+				"AVG_SALES_THIS_MONTH": "Среднедневные продажи за текущий месяц",
+				"TOTAL_ORDERS_THIS_MONTH": "Количество заказов за текущий месяц",
+				"LAST_MONTH": "По сравнению с предыдущим месяцем",
+				"TOTAL_SALES": "Общие продажи",
+				"TOTAL_ORDERS": "Общее количество заказов",
+				"ACTIVE_ORDERS": "Активные заказы",
+				"COMPLETED_ORDERS": "Завершенные заказы",
+				"PRODUCTS": "Товаров",
+				"EMPLOYEES": "Сотрудников"
+			},
+			"REVENUE_GRAPH": {
+				"LABEL": "Выручка по периодам",
+				"DESCRIPTION": "Показывает выручку от заказов за выбранные периоды",
+				"PERIODS": {
+					"PLACEHOLDER": "Выберите период",
+					"ONE_DAY": "1 День",
+					"FIVE_DAYS": "5 Дней",
+					"ONE_MONTH": "1 Месяц",
+					"SIX_MONTHS": "6 Месяцев",
+					"MAX": "Макс"
+				}
+			}
+		}
+	}
+}
