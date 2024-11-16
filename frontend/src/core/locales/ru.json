@@ -350,8 +350,8 @@
 				"SHIPPING": "Доставка",
 				"DISCOUNT": "Скидка",
 				"TOTAL": "Итого",
-				"PAID_SHIPPING":"Оплата курьеру",
-				"FREE_SHIPPING":"Бесплатная доставка"
+				"PAID_SHIPPING": "Оплата курьеру",
+				"FREE_SHIPPING": "Бесплатная доставка"
 			}
 		},
 		"CUSTOMER_DETAILS": {
@@ -474,8 +474,8 @@
 		}
 	},
 	"PRODUCTS": {
-		"PAGE": "Загрузка резюме",
-		"TITLE": "Загрузка и анализ кандидатов",
+		"PAGE": "Товары",
+		"TITLE": "Товары и анализ товаров",
 		"EXPORT": "Экспорт",
 		"CREATE": "Создать",
 		"FILTER": {
@@ -613,6 +613,234 @@
 					}
 				},
 				"CREATE_BUTTON": "Сохранить продукт",
+				"GENERATE_BUTTON": "Генерировать"
+			},
+			"UPDATE": {
+				"HEADER": "Обновить продукт",
+				"INFORMATION": {
+					"LABEL": "Информация",
+					"NAME": {
+						"LABEL": "Наименование",
+						"PLACEHOLDER": "Введите наименование"
+					},
+					"DESCRIPTION": {
+						"LABEL": "Описание",
+						"PLACEHOLDER": "Введите описание"
+					},
+					"BARCODE": {
+						"LABEL": "Штрих-код",
+						"PLACEHOLDER": "Введите штрих-код"
+					},
+					"PRODUCT_CODE": {
+						"LABEL": "Код продукта",
+						"PLACEHOLDER": "Введите код продукта"
+					},
+					"PRICE": {
+						"LABEL": "Цена",
+						"PLACEHOLDER": "Введите цену"
+					},
+					"STOCK": {
+						"LABEL": "Наличие на складе",
+						"PLACEHOLDER": "Введите количество в наличии"
+					},
+					"SUB_CATEGORY": {
+						"LABEL": "Подкатегория",
+						"PLACEHOLDER": "Введите подкатегорию"
+					},
+					"IMAGE": {
+						"LABEL": "Изображение",
+						"PLACEHOLDER": "Выберите изображение"
+					}
+				},
+				"CHARACTERISTICS": {
+					"LABEL": "Характеристики",
+					"EXTRA_DESCRIPTION": {
+						"LABEL": "Дополнительное описание",
+						"PLACEHOLDER": "Введите дополнительное описание"
+					},
+					"MEASURE_UNIT": {
+						"LABEL": "Единица измерения",
+						"PLACEHOLDER": "Введите единицу измерения"
+					},
+					"SIZE": {
+						"LABEL": "Размер",
+						"PLACEHOLDER": "Введите размер"
+					},
+					"COLOR": {
+						"LABEL": "Цвет",
+						"PLACEHOLDER": "Введите цвет"
+					},
+					"MANUFACTURER": {
+						"LABEL": "Производитель",
+						"PLACEHOLDER": "Введите производителя"
+					},
+					"ITEMS_PACKAGE": {
+						"LABEL": "Количество в упаковке",
+						"PLACEHOLDER": "Введите количество товаров в упаковке"
+					},
+					"ONECNAME": {
+						"LABEL": "Наименование поля в 1С",
+						"PLACEHOLDER": "Введите наименование поля в 1С"
+					},
+					"LABELS": {
+						"LABEL": "Метки",
+						"PLACEHOLDER": "Введите метки через запятую ','"
+					},
+					"VISIBILITY": {
+						"LABEL": "Статус видимости продукта",
+						"PLACEHOLDER": "Выберите статус видимости",
+						"VISIBLE": "Видимый",
+						"HIDDEN": "Скрытый"
+					}
+				},
+				"UPDATE_BUTTON": "Сохранить продукт"
+			}
+		}
+	},
+	"RESUME": {
+		"PAGE": "Загрузка резюме",
+		"TITLE": "Загрузка Резюме и анализ кандитатов",
+		"EXPORT": "Экспорт",
+		"CREATE": "Создать",
+		"FILTER": {
+			"TERM": "Поиск",
+			"SORT": {
+				"DATE_ASC": "По дате создания ↗",
+				"DATE_DESC": "По дате создания ↘"
+			},
+			"SUB_CATEGORY": {
+				"LABEL": "Подкатегория",
+				"NONE": "Не выбран"
+			},
+			"VIEW": {
+				"TABLE": "Таблица",
+				"LIST": "Список"
+			}
+		},
+		"TABLE": {
+			"NAME": "Имя",
+			"CODE": "Артикул",
+			"BARCODE": "Штрихкод",
+			"SUB_CATEGORY": "Подкатегория",
+			"PRICE": "Цена",
+			"IN_STOCK": "В наличии",
+			"VISIBILITY": {
+				"LABEL": "Видимость",
+				"VISIBLE": "Видимый",
+				"HIDDEN": "Скрытый"
+			}
+		},
+		"DIALOGS": {
+			"DETAILS": {
+				"HEADER": "Детали продукта",
+				"INFORMATION": {
+					"LABEL": "Информация",
+					"NAME": "Название",
+					"DESCRIPTION": "Описание",
+					"BARCODE": "Штрих-код",
+					"PRODUCT_CODE": "Код продукта",
+					"PRICE": "Цена",
+					"STOCK": "Доступно на складе",
+					"SUB_CATEGORY": "Подкатегория",
+					"CREATED_DATE": "Дата создания"
+				},
+				"CHARACTERISTICS": {
+					"LABEL": "Характеристики",
+					"EXTRA_DESCRIPTION": "Дополнительное описание",
+					"MEASURE_UNIT": "Единица измерения",
+					"SIZE": "Размер",
+					"COLOR": "Цвет",
+					"MANUFACTURER": "Производитель",
+					"ITEMS_PACKAGE": "Количество единиц в упаковке",
+					"ONECNAME": "Название поля в 1C",
+					"LABELS": "Метки"
+				},
+				"BARCODE": {
+					"LABEL": "Штрих-код",
+					"PRINT_BUTTON": "Печать"
+				}
+			},
+			"CREATE": {
+				"HEADER": "Поиск специалиста",
+				"INFORMATION": {
+					"LABEL": "Информация",
+					"NAME": {
+						"LABEL": "Наименование",
+						"PLACEHOLDER": "Введите наименование"
+					},
+					"DESCRIPTION": {
+						"LABEL": "Описание",
+						"PLACEHOLDER": "Введите описание"
+					},
+					"BARCODE": {
+						"LABEL": "Штрих-код",
+						"PLACEHOLDER": "Введите штрих-код"
+					},
+					"PRODUCT_CODE": {
+						"LABEL": "Код продукта",
+						"PLACEHOLDER": "Введите код продукта"
+					},
+					"PRICE": {
+						"LABEL": "Цена",
+						"PLACEHOLDER": "Введите цену"
+					},
+					"STOCK": {
+						"LABEL": "Наличие на складе",
+						"PLACEHOLDER": "Введите количество в наличии"
+					},
+					"SUB_CATEGORY": {
+						"LABEL": "Подкатегория",
+						"PLACEHOLDER": "Введите подкатегорию"
+					},
+					"CATEGORY": {
+						"LABEL": "Категория",
+						"PLACEHOLDER": "Введите категорию"
+					},
+					"IMAGE": {
+						"LABEL": "Изображение",
+						"PLACEHOLDER": "Выберите изображение"
+					},
+					"FILE": {
+						"LABEL": "Файл резюме",
+						"PLACEHOLDER": "Выберите файл"
+					}
+				},
+				"CHARACTERISTICS": {
+					"LABEL": "Характеристики",
+					"EXTRA_DESCRIPTION": {
+						"LABEL": "Дополнительное описание",
+						"PLACEHOLDER": "Введите дополнительное описание"
+					},
+					"MEASURE_UNIT": {
+						"LABEL": "Единица измерения",
+						"PLACEHOLDER": "Введите единицу измерения"
+					},
+					"SIZE": {
+						"LABEL": "Размер",
+						"PLACEHOLDER": "Введите размер"
+					},
+					"COLOR": {
+						"LABEL": "Цвет",
+						"PLACEHOLDER": "Введите цвет"
+					},
+					"MANUFACTURER": {
+						"LABEL": "Производитель",
+						"PLACEHOLDER": "Введите производителя"
+					},
+					"ITEMS_PACKAGE": {
+						"LABEL": "Количество в упаковке",
+						"PLACEHOLDER": "Введите количество товаров в упаковке"
+					},
+					"ONECNAME": {
+						"LABEL": "Наименование поля в 1С",
+						"PLACEHOLDER": "Введите наименование поля в 1С"
+					},
+					"LABELS": {
+						"LABEL": "Метки",
+						"PLACEHOLDER": "Введите метки через запятую ','"
+					}
+				},
+				"CREATE_BUTTON": "Поиск",
 				"GENERATE_BUTTON": "Генерировать"
 			},
 			"UPDATE": {

@@ -1,6 +1,5 @@
 import {
 	Boxes,
-	Contact,
 	Home,
 	Layers3,
 	LayoutDashboard,
@@ -8,7 +7,6 @@ import {
 	LibraryBig,
 	ListOrdered,
 	type LucideIcon,
-	Settings,
 	ShoppingBasket,
 	ShoppingCart,
 	Smartphone,
@@ -43,6 +41,12 @@ export const ADMIN_MENU: IMenuItem[] = [
 		icon: ShoppingBasket,
 		link: () => ADMIN_PAGES.PRODUCTS,
 		name: 'PRODUCTS.PAGE',
+		showRoles: [ROLES.ADMIN, ROLES.SUPERADMIN]
+	},
+	{
+		icon: ShoppingBasket,
+		link: () => ADMIN_PAGES.RESUME,
+		name: 'RESUME.PAGE',
 		showRoles: [ROLES.ADMIN, ROLES.SUPERADMIN]
 	},
 	{
