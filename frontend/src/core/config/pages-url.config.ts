@@ -7,6 +7,7 @@ class AdminPages {
 	CATEGORIES = `${this.baseUrl}/categories`
 	SUB_CATEGORIES = `${this.baseUrl}/sub-categories`
 	PRODUCTS = `${this.baseUrl}/products`
+	RESUME = `${this.baseUrl}/resume`
 	COMPANY_USERS = `${this.baseUrl}/company-users`
 	USERS = `${this.baseUrl}/users`
 	SETTINGS = `${this.baseUrl}/settings`
